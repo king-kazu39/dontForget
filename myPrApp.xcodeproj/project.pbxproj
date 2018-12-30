@@ -15,6 +15,7 @@
 		E5EA43AD21D8D0E10053FAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EA43AB21D8D0E10053FAEC /* LaunchScreen.storyboard */; };
 		E5EA43B521D8D1520053FAEC /* preparation.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EA43B421D8D1520053FAEC /* preparation.png */; };
 		E5EA43B721D8D1890053FAEC /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EA43B621D8D1890053FAEC /* setting.png */; };
+		E5EA43B921D9130E0053FAEC /* LangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA43B821D9130E0053FAEC /* LangViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E5EA43AE21D8D0E10053FAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5EA43B421D8D1520053FAEC /* preparation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preparation.png; sourceTree = "<group>"; };
 		E5EA43B621D8D1890053FAEC /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		E5EA43B821D9130E0053FAEC /* LangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */,
+				E5EA43B821D9130E0053FAEC /* LangViewController.swift */,
 				E5EA43A121D8D0E00053FAEC /* ViewController.swift */,
 				E5EA43A321D8D0E00053FAEC /* Main.storyboard */,
 				E5EA43B621D8D1890053FAEC /* setting.png */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5EA43B921D9130E0053FAEC /* LangViewController.swift in Sources */,
 				E5EA43A821D8D0E00053FAEC /* myPrApp.xcdatamodeld in Sources */,
 				E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */,
 				E5EA43A021D8D0E00053FAEC /* AppDelegate.swift in Sources */,
