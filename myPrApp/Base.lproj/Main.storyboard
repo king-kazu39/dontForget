@@ -107,7 +107,7 @@
                                 <state key="normal" title="English"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.93212782270000005" green="1" blue="0.18939065869999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.96769615050000002" green="1" blue="0.98192443569999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="cLI-xX-RUM" firstAttribute="trailing" secondItem="V1H-6b-T2a" secondAttribute="trailing" id="7lB-Zc-eXY"/>
                             <constraint firstItem="3Jz-02-x9m" firstAttribute="trailing" secondItem="cLI-xX-RUM" secondAttribute="trailing" id="9Sa-EP-sFl"/>
@@ -126,6 +126,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13K-R1-0Cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1908.75" y="25.35211267605634"/>
+        </scene>
+        <!--User Type View Controller-->
+        <scene sceneID="vb0-d6-iWM">
+            <objects>
+                <viewController id="8hy-IA-TBQ" customClass="UserTypeViewController" customModule="myPrApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ptq-ne-Mkw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93212782270000005" green="1" blue="0.18939065869999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="ns3-Vb-3NB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWJ-9t-zw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2694" y="25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bf7-7u-hmv">
