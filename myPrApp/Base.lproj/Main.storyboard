@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="52.5" y="26.408450704225352"/>
         </scene>
-        <!--View Controller-->
+        <!--Lang View Controller-->
         <scene sceneID="FMZ-5K-EKZ">
             <objects>
-                <viewController id="Kp6-Rl-6st" sceneMemberID="viewController">
+                <viewController id="Kp6-Rl-6st" customClass="LangViewController" customModule="myPrApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZeP-MF-Rg8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
