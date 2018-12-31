@@ -16,6 +16,7 @@
 		E5EA43B521D8D1520053FAEC /* preparation.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EA43B421D8D1520053FAEC /* preparation.png */; };
 		E5EA43B721D8D1890053FAEC /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EA43B621D8D1890053FAEC /* setting.png */; };
 		E5EA43B921D9130E0053FAEC /* LangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA43B821D9130E0053FAEC /* LangViewController.swift */; };
+		E5EA43BB21D9CBD80053FAEC /* Langage.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EA43BA21D9CBD80053FAEC /* Langage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E5EA43B421D8D1520053FAEC /* preparation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preparation.png; sourceTree = "<group>"; };
 		E5EA43B621D8D1890053FAEC /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 		E5EA43B821D9130E0053FAEC /* LangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangViewController.swift; sourceTree = "<group>"; };
+		E5EA43BA21D9CBD80053FAEC /* Langage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Langage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				E5EA43A321D8D0E00053FAEC /* Main.storyboard */,
 				E5EA43B621D8D1890053FAEC /* setting.png */,
 				E5EA43B421D8D1520053FAEC /* preparation.png */,
+				E5EA43BA21D9CBD80053FAEC /* Langage.png */,
 				E5EA43A921D8D0E10053FAEC /* Assets.xcassets */,
 				E5EA43AB21D8D0E10053FAEC /* LaunchScreen.storyboard */,
 				E5EA43AE21D8D0E10053FAEC /* Info.plist */,
@@ -138,6 +141,7 @@
 				E5EA43AD21D8D0E10053FAEC /* LaunchScreen.storyboard in Resources */,
 				E5EA43AA21D8D0E10053FAEC /* Assets.xcassets in Resources */,
 				E5EA43A521D8D0E00053FAEC /* Main.storyboard in Resources */,
+				E5EA43BB21D9CBD80053FAEC /* Langage.png in Resources */,
 				E5EA43B721D8D1890053FAEC /* setting.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
