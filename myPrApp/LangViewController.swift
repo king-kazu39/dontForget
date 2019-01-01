@@ -34,7 +34,8 @@ class LangViewController: UIViewController {
     }
     
     
-    //TODO:遷移時に値の受け渡しする(Japanese)
+    //TODO:①遷移時に値の受け渡しする(Japanese)
+    //TODO:②アクションシートの「Change to Japanese」ボタンで画面遷移できるようにする
     @IBAction func tapJpn(_ sender: Any) {
         
         //アクションシートオブジェクトを生成
@@ -51,7 +52,9 @@ class LangViewController: UIViewController {
         
     }
     
-    //TODO:遷移時に値の受け渡しする(English)
+    //TODO:①遷移時に値の受け渡しする(English)
+    //TODO:②アクションシートの「Change to English」ボタンで画面遷移できるようにする
+
     @IBAction func tapEng(_ sender: Any) {
         
         //アクションシートオブジェクトを生成
