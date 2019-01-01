@@ -34,6 +34,48 @@ class LangViewController: UIViewController {
     }
     
     
+    //TODO:遷移時に値の受け渡しする(Japanese)
+    @IBAction func tapJpn(_ sender: Any) {
+        
+        //アクションシートオブジェクトを生成
+        let actionSheet = UIAlertController(title: "使用する言語を決めましょう", message: "この言語に設定しますか？", preferredStyle: .actionSheet)
+        
+        //アクションボタン１を追加
+        actionSheet.addAction(UIAlertAction(title: "Change to Japanese", style: .default, handler: {action in self.normalA(language:"Japanese")}))
+        
+        //キャンセルボタンを追加
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {action in self.normalA(language:"Cancel")}))
+        
+        //アクションシートを表示する
+        present(actionSheet,animated: true)
+        
+    }
+    
+    //TODO:遷移時に値の受け渡しする(English)
+    @IBAction func tapEng(_ sender: Any) {
+        
+        //アクションシートオブジェクトを生成
+        let actionSheet = UIAlertController(title: "使用する言語を決めましょう", message: "この言語に設定しますか？", preferredStyle: .actionSheet)
+        
+        //アクションボタン１を追加
+        actionSheet.addAction(UIAlertAction(title: "Change to English", style: .default, handler: {action in self.normalA(language:"English")}))
+        
+        //キャンセルボタンを追加
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {action in self.normalA(language:"Cancel")}))
+        
+        //アクションシートを表示する
+        present(actionSheet,animated: true)
+    
+    
+    }
+    
+    
+    func normalA (language:String) {
+            print("\(language)")
+    }
+    
+    
+    
     
     
     /*
