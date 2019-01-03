@@ -75,6 +75,11 @@ class LangViewController: UIViewController {
     
     func normalA (language:String) {
             print("\(language)")
+        
+        if language == "Japanese" || language == "English" {
+         self.performSegue(withIdentifier: "showUserType", sender: nil)
+        }
+        
     }
     
     

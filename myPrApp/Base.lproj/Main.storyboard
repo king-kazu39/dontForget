@@ -98,7 +98,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Japanese"/>
                                 <connections>
-                                    <action selector="tapJpn:" destination="Kp6-Rl-6st" eventType="touchUpInside" id="ert-4I-H74"/>
+                                    <action selector="tapJpn:" destination="Kp6-Rl-6st" eventType="touchUpInside" id="hW1-TM-JE3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1H-6b-T2a">
@@ -128,6 +128,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P8r-nN-fBe"/>
                     </view>
+                    <connections>
+                        <segue destination="8hy-IA-TBQ" kind="show" identifier="showUserType" id="kyg-io-Vmq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13K-R1-0Cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
