@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E524E39121DF3D8D009AF942 /* PrepareTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524E39021DF3D8D009AF942 /* PrepareTopViewController.swift */; };
 		E5EA43A021D8D0E00053FAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */; };
 		E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA43A121D8D0E00053FAEC /* ViewController.swift */; };
 		E5EA43A521D8D0E00053FAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EA43A321D8D0E00053FAEC /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E524E39021DF3D8D009AF942 /* PrepareTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareTopViewController.swift; sourceTree = "<group>"; };
 		E5EA439C21D8D0E00053FAEC /* myPrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5EA43A121D8D0E00053FAEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				E5EA43B821D9130E0053FAEC /* LangViewController.swift */,
 				E5EA43A121D8D0E00053FAEC /* ViewController.swift */,
 				E5EA43BC21DA09990053FAEC /* UserTypeViewController.swift */,
+				E524E39021DF3D8D009AF942 /* PrepareTopViewController.swift */,
 				E5EA43A321D8D0E00053FAEC /* Main.storyboard */,
 				E5EA43B621D8D1890053FAEC /* setting.png */,
 				E5EA43B421D8D1520053FAEC /* preparation.png */,
@@ -160,6 +163,7 @@
 				E5EA43A821D8D0E00053FAEC /* myPrApp.xcdatamodeld in Sources */,
 				E5EA43BD21DA09990053FAEC /* UserTypeViewController.swift in Sources */,
 				E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */,
+				E524E39121DF3D8D009AF942 /* PrepareTopViewController.swift in Sources */,
 				E5EA43A021D8D0E00053FAEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

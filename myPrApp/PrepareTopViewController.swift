@@ -1,30 +1,28 @@
 //
-//  UserTypeViewController.swift
+//  PrepareTopViewController.swift
 //  myPrApp
 //
-//  Created by 仲里和也 on 2018/12/31.
-//  Copyright © 2018 Kazuya Nakazato. All rights reserved.
+//  Created by 仲里和也 on 2019/01/04.
+//  Copyright © 2019 Kazuya Nakazato. All rights reserved.
 //
 
 import UIKit
 
-class UserTypeViewController: UIViewController {
+class PrepareTopViewController: UIViewController {
 
     
-    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var pepareLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-      
-      myLabel.text  = LangViewController().readData()
+        pepareLabel.text = LangViewController().readData()
         
         
     }
-    
-    
     
 
     /*

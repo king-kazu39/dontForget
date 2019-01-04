@@ -10,10 +10,19 @@ import UIKit
 
 class LangViewController: UIViewController {
     
+    //言語設定をするために使うメンバ変数用意
+    var settingLang:String?
+    
+    //UserDefaultsのインスタンス化
+    let userDefaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // UserDefaultsのデフォルト値
+        userDefaults.register(defaults: ["DataStore": "default"])
         
         //UIImageViewのインスタンス作成
         let imageView = UIImageView()
@@ -74,15 +83,36 @@ class LangViewController: UIViewController {
     
     
     func normalA (language:String) {
-            print("\(language)")
         
-        if language == "Japanese" || language == "English" {
-         self.performSegue(withIdentifier: "showUserType", sender: nil)
+        settingLang = language
+        print("\(settingLang)")
+        
+        if settingLang == "Japanese" || settingLang == "English" {
+         
+            //値を保存するためのメソッドを呼び出す
+            saveData(str: settingLang!)
+            
+            //settingLangにJapaneseかEnglishがあれば次画面に遷移する
+            self.performSegue(withIdentifier: "showUserType", sender: nil)
+            
         }
         
     }
     
+    func saveData(str: String){
+        // Keyを指定して保存
+        userDefaults.set(str, forKey: "DataStore")
+        // データの同期
+        userDefaults.synchronize()
+        
+    }
     
+    func readData() -> String {
+        // Keyを指定して読み込み
+        let str: String = userDefaults.object(forKey: "DataStore") as! String
+        
+        return str
+    }
     
     
     
