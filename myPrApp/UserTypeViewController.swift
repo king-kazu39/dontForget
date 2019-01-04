@@ -18,7 +18,6 @@ class UserTypeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-      
       myLabel.text  = LangViewController().readData()
         
         

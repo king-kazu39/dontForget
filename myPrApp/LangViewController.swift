@@ -7,14 +7,13 @@
 //
 
 import UIKit
+//UserDefaultsのインスタンス化
+let userDefaults = UserDefaults.standard
 
 class LangViewController: UIViewController {
     
     //言語設定をするために使うメンバ変数用意
     var settingLang:String?
-    
-    //UserDefaultsのインスタンス化
-    let userDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
