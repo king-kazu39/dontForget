@@ -10,6 +10,8 @@ import UIKit
 
 class LangViewController: UIViewController {
     
+    var settingLang:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -76,13 +78,22 @@ class LangViewController: UIViewController {
     func normalA (language:String) {
             print("\(language)")
         
-        if language == "Japanese" || language == "English" {
+        settingLang = language
+        
+        if settingLang == "Japanese" || settingLang == "English" {
          self.performSegue(withIdentifier: "showUserType", sender: nil)
         }
         
     }
     
-    
+    //セグエを通って移動するとき発動
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let scVC = segue.destination as! UserTypeViewController
+        
+        scVC.label = settingLang
+        
+    }
     
     
     

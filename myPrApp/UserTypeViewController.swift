@@ -10,10 +10,18 @@ import UIKit
 
 class UserTypeViewController: UIViewController {
 
+    
+    @IBOutlet weak var myLabel: UILabel!
+    
+    var label:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        myLabel.text = label
+        
     }
     
 
