@@ -10,6 +10,8 @@ import UIKit
 
 class LangViewController: UIViewController {
     
+    //メンバ変数を用意
+    //次画面に値を渡す時に使う
     var settingLang:String?
     
     override func viewDidLoad() {
@@ -36,8 +38,6 @@ class LangViewController: UIViewController {
     }
     
     
-    //TODO:①遷移時に値の受け渡しする(Japanese)
-    //TODO:②アクションシートの「Change to Japanese」ボタンで画面遷移できるようにする
     @IBAction func tapJpn(_ sender: Any) {
         
         //アクションシートオブジェクトを生成
@@ -54,9 +54,6 @@ class LangViewController: UIViewController {
         
     }
     
-    //TODO:①遷移時に値の受け渡しする(English)
-    //TODO:②アクションシートの「Change to English」ボタンで画面遷移できるようにする
-
     @IBAction func tapEng(_ sender: Any) {
         
         //アクションシートオブジェクトを生成
@@ -74,12 +71,14 @@ class LangViewController: UIViewController {
     
     }
     
-    
+    //アクションボタンを押した時に発動する
     func normalA (language:String) {
             print("\(language)")
         
+        //メンバ変数にアクションボタンの値を入れる
         settingLang = language
         
+        //JapaneseかEnglishに言語設定をしていたら（ボタンを押したら）次画面に遷移する
         if settingLang == "Japanese" || settingLang == "English" {
          self.performSegue(withIdentifier: "showUserType", sender: nil)
         }
@@ -91,6 +90,8 @@ class LangViewController: UIViewController {
         
         let scVC = segue.destination as! UserTypeViewController
         
+        //UserTypeViewControllerに宣言したlabelプロパティにアクションボタンを入れた時に入った値を格納する
+        //次画面に渡すための準備
         scVC.label = settingLang
         
     }
