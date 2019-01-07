@@ -8,6 +8,7 @@
 
 import UIKit
 //UserDefaultsのインスタンス化
+//別クラスでも使えるようにするためにクラス外でインスタンス化する
 let userDefaults = UserDefaults.standard
 
 class LangViewController: UIViewController {
