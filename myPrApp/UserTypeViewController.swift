@@ -17,6 +17,8 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
     
     var userTypes:[String?] = []
     
+    var selectedImage: String?
+    
     let userImages = [
         "singleman","singlewoman","married","pet","student",
         "child","usertype"]
@@ -78,6 +80,31 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
         
         return testCell
     }
+    
+    // Cell が選択された場合
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        // [indexPath.row] から画像名を探し、UImage を設定
+        selectedImage = userImages[indexPath.row]
+        
+        print(selectedImage)
+        
+        if selectedImage != nil {
+            // SubViewController へ遷移するために Segue を呼び出す
+            performSegue(withIdentifier: "toQuestionView",sender: nil)
+        }
+        
+    }
+    
+    // Segue 準備
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        if (segue.identifier == "toQuestionView") {
+            let qtVC: QuestionViewController = (segue.destination as? QuestionViewController)!
+            // SubViewController のselectedImgに選択された画像を設定する
+            qtVC.selecetdImg = selectedImage
+        }
+    }
+    
     
     // Screenサイズに応じたセルサイズを返す
     // UICollectionViewDelegateFlowLayoutの設定が必要

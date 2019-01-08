@@ -7,19 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E505D81F21E332C800F1866E /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D81E21E332C800F1866E /* QuestionViewController.swift */; };
 		E524E39121DF3D8D009AF942 /* PrepareTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524E39021DF3D8D009AF942 /* PrepareTopViewController.swift */; };
-		E524E39321DF4D04009AF942 /* がま口財布のアイコン　（円）.png in Resources */ = {isa = PBXBuildFile; fileRef = E524E39221DF4D04009AF942 /* がま口財布のアイコン　（円）.png */; };
-		E524E39521DF4D93009AF942 /* カメラアイコン9.png in Resources */ = {isa = PBXBuildFile; fileRef = E524E39421DF4D93009AF942 /* カメラアイコン9.png */; };
-		E524E39721DF4D9F009AF942 /* ノートPCアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E524E39621DF4D9F009AF942 /* ノートPCアイコン.png */; };
-		E524E39921DF4DB3009AF942 /* 鍵アイコン (1).png in Resources */ = {isa = PBXBuildFile; fileRef = E524E39821DF4DB3009AF942 /* 鍵アイコン (1).png */; };
-		E524E39B21DF4DDA009AF942 /* student.png in Resources */ = {isa = PBXBuildFile; fileRef = E524E39A21DF4DDA009AF942 /* student.png */; };
-		E524E39D21DF4DE6009AF942 /* pet.png in Resources */ = {isa = PBXBuildFile; fileRef = E524E39C21DF4DE6009AF942 /* pet.png */; };
-		E524E39F21DF4DF9009AF942 /* married.png in Resources */ = {isa = PBXBuildFile; fileRef = E524E39E21DF4DF9009AF942 /* married.png */; };
-		E524E3A121DF4E0E009AF942 /* addUserType.png in Resources */ = {isa = PBXBuildFile; fileRef = E524E3A021DF4E0D009AF942 /* addUserType.png */; };
-		E524E3A321DF4E1A009AF942 /* singlewoman.png in Resources */ = {isa = PBXBuildFile; fileRef = E524E3A221DF4E1A009AF942 /* singlewoman.png */; };
-		E524E3A521DF4E5D009AF942 /* プラスのアイコン素材.png in Resources */ = {isa = PBXBuildFile; fileRef = E524E3A421DF4E5D009AF942 /* プラスのアイコン素材.png */; };
-		E524E3A721DF4E73009AF942 /* singleman.png in Resources */ = {isa = PBXBuildFile; fileRef = E524E3A621DF4E73009AF942 /* singleman.png */; };
-		E524E3A921DF4E8C009AF942 /* child.png in Resources */ = {isa = PBXBuildFile; fileRef = E524E3A821DF4E8C009AF942 /* child.png */; };
 		E5EA43A021D8D0E00053FAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */; };
 		E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA43A121D8D0E00053FAEC /* ViewController.swift */; };
 		E5EA43A521D8D0E00053FAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EA43A321D8D0E00053FAEC /* Main.storyboard */; };
@@ -34,19 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E505D81E21E332C800F1866E /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		E524E39021DF3D8D009AF942 /* PrepareTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareTopViewController.swift; sourceTree = "<group>"; };
-		E524E39221DF4D04009AF942 /* がま口財布のアイコン　（円）.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "がま口財布のアイコン　（円）.png"; sourceTree = "<group>"; };
-		E524E39421DF4D93009AF942 /* カメラアイコン9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "カメラアイコン9.png"; sourceTree = "<group>"; };
-		E524E39621DF4D9F009AF942 /* ノートPCアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ノートPCアイコン.png"; sourceTree = "<group>"; };
-		E524E39821DF4DB3009AF942 /* 鍵アイコン (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "鍵アイコン (1).png"; sourceTree = "<group>"; };
-		E524E39A21DF4DDA009AF942 /* student.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = student.png; sourceTree = "<group>"; };
-		E524E39C21DF4DE6009AF942 /* pet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pet.png; sourceTree = "<group>"; };
-		E524E39E21DF4DF9009AF942 /* married.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = married.png; sourceTree = "<group>"; };
-		E524E3A021DF4E0D009AF942 /* addUserType.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addUserType.png; sourceTree = "<group>"; };
-		E524E3A221DF4E1A009AF942 /* singlewoman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singlewoman.png; sourceTree = "<group>"; };
-		E524E3A421DF4E5D009AF942 /* プラスのアイコン素材.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "プラスのアイコン素材.png"; sourceTree = "<group>"; };
-		E524E3A621DF4E73009AF942 /* singleman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singleman.png; sourceTree = "<group>"; };
-		E524E3A821DF4E8C009AF942 /* child.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = child.png; sourceTree = "<group>"; };
 		E5EA439C21D8D0E00053FAEC /* myPrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5EA43A121D8D0E00053FAEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,23 +74,12 @@
 				E5EA43B821D9130E0053FAEC /* LangViewController.swift */,
 				E5EA43A121D8D0E00053FAEC /* ViewController.swift */,
 				E5EA43BC21DA09990053FAEC /* UserTypeViewController.swift */,
+				E505D81E21E332C800F1866E /* QuestionViewController.swift */,
 				E524E39021DF3D8D009AF942 /* PrepareTopViewController.swift */,
 				E5EA43A321D8D0E00053FAEC /* Main.storyboard */,
 				E5EA43B621D8D1890053FAEC /* setting.png */,
 				E5EA43B421D8D1520053FAEC /* preparation.png */,
 				E5EA43BA21D9CBD80053FAEC /* Langage.png */,
-				E524E3A621DF4E73009AF942 /* singleman.png */,
-				E524E3A221DF4E1A009AF942 /* singlewoman.png */,
-				E524E39C21DF4DE6009AF942 /* pet.png */,
-				E524E39E21DF4DF9009AF942 /* married.png */,
-				E524E39A21DF4DDA009AF942 /* student.png */,
-				E524E3A821DF4E8C009AF942 /* child.png */,
-				E524E3A021DF4E0D009AF942 /* addUserType.png */,
-				E524E39821DF4DB3009AF942 /* 鍵アイコン (1).png */,
-				E524E39621DF4D9F009AF942 /* ノートPCアイコン.png */,
-				E524E39221DF4D04009AF942 /* がま口財布のアイコン　（円）.png */,
-				E524E39421DF4D93009AF942 /* カメラアイコン9.png */,
-				E524E3A421DF4E5D009AF942 /* プラスのアイコン素材.png */,
 				E5EA43A921D8D0E10053FAEC /* Assets.xcassets */,
 				E5EA43AB21D8D0E10053FAEC /* LaunchScreen.storyboard */,
 				E5EA43AE21D8D0E10053FAEC /* Info.plist */,
@@ -180,23 +147,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5EA43B521D8D1520053FAEC /* preparation.png in Resources */,
-				E524E3A921DF4E8C009AF942 /* child.png in Resources */,
-				E524E39521DF4D93009AF942 /* カメラアイコン9.png in Resources */,
-				E524E39D21DF4DE6009AF942 /* pet.png in Resources */,
-				E524E39F21DF4DF9009AF942 /* married.png in Resources */,
 				E5EA43AD21D8D0E10053FAEC /* LaunchScreen.storyboard in Resources */,
-				E524E39721DF4D9F009AF942 /* ノートPCアイコン.png in Resources */,
-				E524E3A121DF4E0E009AF942 /* addUserType.png in Resources */,
 				E5EA43AA21D8D0E10053FAEC /* Assets.xcassets in Resources */,
-				E524E39921DF4DB3009AF942 /* 鍵アイコン (1).png in Resources */,
 				E5EA43A521D8D0E00053FAEC /* Main.storyboard in Resources */,
-				E524E3A321DF4E1A009AF942 /* singlewoman.png in Resources */,
-				E524E39321DF4D04009AF942 /* がま口財布のアイコン　（円）.png in Resources */,
 				E5EA43BB21D9CBD80053FAEC /* Langage.png in Resources */,
-				E524E3A521DF4E5D009AF942 /* プラスのアイコン素材.png in Resources */,
-				E524E3A721DF4E73009AF942 /* singleman.png in Resources */,
 				E5EA43B721D8D1890053FAEC /* setting.png in Resources */,
-				E524E39B21DF4DDA009AF942 /* student.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +164,7 @@
 			files = (
 				E5EA43B921D9130E0053FAEC /* LangViewController.swift in Sources */,
 				E5EA43A821D8D0E00053FAEC /* myPrApp.xcdatamodeld in Sources */,
+				E505D81F21E332C800F1866E /* QuestionViewController.swift in Sources */,
 				E5EA43BD21DA09990053FAEC /* UserTypeViewController.swift in Sources */,
 				E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */,
 				E524E39121DF3D8D009AF942 /* PrepareTopViewController.swift in Sources */,
