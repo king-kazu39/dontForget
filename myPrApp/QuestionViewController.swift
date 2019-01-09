@@ -92,7 +92,6 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
 
         // Do any additional setup after loading the view.
 
-        
     }
     
     //Table Viewのセルの数を指定
