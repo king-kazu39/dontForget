@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E505D81F21E332C800F1866E /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D81E21E332C800F1866E /* QuestionViewController.swift */; };
+		E505D82621E5BE5C00F1866E /* subQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505D82521E5BE5C00F1866E /* subQuestionViewController.swift */; };
 		E524E39121DF3D8D009AF942 /* PrepareTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524E39021DF3D8D009AF942 /* PrepareTopViewController.swift */; };
 		E5EA43A021D8D0E00053FAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */; };
 		E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA43A121D8D0E00053FAEC /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		E505D81E21E332C800F1866E /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		E505D82521E5BE5C00F1866E /* subQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subQuestionViewController.swift; sourceTree = "<group>"; };
 		E524E39021DF3D8D009AF942 /* PrepareTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareTopViewController.swift; sourceTree = "<group>"; };
 		E5EA439C21D8D0E00053FAEC /* myPrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E505D82421E5BE1E00F1866E /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				E505D81E21E332C800F1866E /* QuestionViewController.swift */,
+				E505D82521E5BE5C00F1866E /* subQuestionViewController.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		E505D82721E5CC3900F1866E /* UserTypes */ = {
+			isa = PBXGroup;
+			children = (
+				E5EA43BC21DA09990053FAEC /* UserTypeViewController.swift */,
+			);
+			path = UserTypes;
+			sourceTree = "<group>";
+		};
 		E5EA439321D8D0E00053FAEC = {
 			isa = PBXGroup;
 			children = (
@@ -73,8 +92,8 @@
 				E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */,
 				E5EA43B821D9130E0053FAEC /* LangViewController.swift */,
 				E5EA43A121D8D0E00053FAEC /* ViewController.swift */,
-				E5EA43BC21DA09990053FAEC /* UserTypeViewController.swift */,
-				E505D81E21E332C800F1866E /* QuestionViewController.swift */,
+				E505D82721E5CC3900F1866E /* UserTypes */,
+				E505D82421E5BE1E00F1866E /* Questions */,
 				E524E39021DF3D8D009AF942 /* PrepareTopViewController.swift */,
 				E5EA43A321D8D0E00053FAEC /* Main.storyboard */,
 				E5EA43B621D8D1890053FAEC /* setting.png */,
@@ -165,6 +184,7 @@
 				E5EA43B921D9130E0053FAEC /* LangViewController.swift in Sources */,
 				E5EA43A821D8D0E00053FAEC /* myPrApp.xcdatamodeld in Sources */,
 				E505D81F21E332C800F1866E /* QuestionViewController.swift in Sources */,
+				E505D82621E5BE5C00F1866E /* subQuestionViewController.swift in Sources */,
 				E5EA43BD21DA09990053FAEC /* UserTypeViewController.swift in Sources */,
 				E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */,
 				E524E39121DF3D8D009AF942 /* PrepareTopViewController.swift in Sources */,

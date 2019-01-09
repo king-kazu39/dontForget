@@ -8,15 +8,15 @@
 
 import UIKit
 
+var language: String?
+var userTypes:[String?] = []
+
+
 //プロトコル追加
 class UserTypeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
 
     
     //メンバ変数用意
-    var language: String?
-    
-    var userTypes:[String?] = []
-    
     var selectedImage: String?
     
     let userImages = [
@@ -101,7 +101,7 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
         if (segue.identifier == "toQuestionView") {
             let qtVC: QuestionViewController = (segue.destination as? QuestionViewController)!
             // SubViewController のselectedImgに選択された画像を設定する
-            qtVC.selecetdImg = selectedImage
+            qtVC.selectedImg = selectedImage
         }
     }
     
