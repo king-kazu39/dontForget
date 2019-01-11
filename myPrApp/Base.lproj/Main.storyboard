@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENl-9E-bv7">
-                                <rect key="frame" x="91" y="382" width="141" height="141"/>
+                                <rect key="frame" x="91" y="382" width="141" height="97"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ENl-9E-bv7" secondAttribute="height" multiplier="1:1" id="ohx-XR-frQ"/>
                                 </constraints>
@@ -318,9 +318,33 @@
                     <view key="view" contentMode="scaleToFill" id="xTP-ri-QjR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xw2-wY-92h">
+                                <rect key="frame" x="1" y="101" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="568810027.67336297">
+                                    <!--2019-01-10 10:47:07 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="ja"/>
+                                <connections>
+                                    <action selector="changeDate:" destination="3e6-S9-FRw" eventType="valueChanged" id="ivz-Hx-Zdc"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUp-bs-hiq">
+                                <rect key="frame" x="145" y="393" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="決定"/>
+                                <connections>
+                                    <action selector="tapDtm:" destination="3e6-S9-FRw" eventType="touchUpInside" id="ExO-1g-XGb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Zf-wQ-8Ju"/>
                     </view>
+                    <connections>
+                        <outlet property="depTime" destination="Xw2-wY-92h" id="aLH-m0-aRK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hwa-L6-Bja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
