@@ -86,7 +86,7 @@ class LangViewController: UIViewController {
         if settingLang == "Japanese" || settingLang == "English" {
          
             //値を保存するためのメソッドを呼び出す
-            saveData(str: settingLang!)
+            saveLang(str: settingLang!)
             
             //settingLangにJapaneseかEnglishがあれば次画面に遷移する
             self.performSegue(withIdentifier: "showUserType", sender: nil)
@@ -95,17 +95,17 @@ class LangViewController: UIViewController {
         
     }
     
-    func saveData(str: String){
+    func saveLang(str: String){
         // Keyを指定して保存
-        userDefaults.set(str, forKey: "DataStore")
+        userDefaults.set(str, forKey: "language")
         // データの同期
         userDefaults.synchronize()
         
     }
     
-    func readData() -> String {
+    func readLang() -> String {
         // Keyを指定して読み込み
-        let str: String = userDefaults.object(forKey: "DataStore") as! String
+        let str: String = userDefaults.object(forKey: "language") as! String
         
         return str
     }

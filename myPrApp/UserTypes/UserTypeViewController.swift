@@ -10,7 +10,7 @@ import UIKit
 
 var language: String?
 var userTypes:[String?] = []
-
+//var selectedImage: String?
 
 //プロトコル追加
 class UserTypeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
@@ -39,15 +39,18 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-      language = LangViewController().readData()
+      
+      //クラス外に定義したlanguage変数に、前画面で保存した値をUserDefaultsから読み込んで格納する
+      language = LangViewController().readLang()
+      //languageの中身をコンソールで確認する
+      print("read関数に保存されている値は\(language)")
 
+        //UserDefaultsで読み込んだ言語設定の値を判断する
+        //Japaneseに設定していたらUserTypesに日本語対応の配列を入れる
         if language == "Japanese" {
-            //
             userTypes = userJpns
-
+        //Englishに設定していたらUserTypesに日本語対応の配列を入れる
         } else if language == "English" {
-            //
             userTypes = userEngs
         }
 
@@ -87,7 +90,10 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
         // [indexPath.row] から画像名を探し、UImage を設定
         selectedImage = userImages[indexPath.row]
         
-        print(selectedImage)
+//        print("選択されたのは\(selectedImage)です")
+        
+        //値を保存するためのメソッドを呼び出す
+        saveUserType(str: selectedImage!)
         
         if selectedImage != nil {
             // SubViewController へ遷移するために Segue を呼び出す
@@ -127,8 +133,13 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
     }
     
     
-    
-    
+    func saveUserType(str: String){
+        // Keyを指定して保存
+        userDefaults.set(str, forKey: "UserType")
+        // データの同期
+        userDefaults.synchronize()
+        
+    }
     
 
     /*

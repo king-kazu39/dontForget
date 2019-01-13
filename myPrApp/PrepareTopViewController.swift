@@ -19,7 +19,7 @@ class PrepareTopViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        pepareLabel.text = LangViewController().readData()
+        pepareLabel.text = LangViewController().readLang()
         
         
     }

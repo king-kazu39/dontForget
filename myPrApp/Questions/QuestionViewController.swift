@@ -10,6 +10,7 @@ import UIKit
 
 
 var questImg:[String?] = []
+var userType:String?
 
 //プロトコル追加
 class QuestionViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
@@ -23,6 +24,8 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        print("選択されたUserTypeは\(selectedImg)です")
 
     }
     
@@ -30,7 +33,8 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
     func tableView(_ table: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        language = LangViewController().readData()
+        
+        language = LangViewController().readLang()
         
         //言語設定がJapaneseになっていたら呼び出す
         if language == "Japanese" {
