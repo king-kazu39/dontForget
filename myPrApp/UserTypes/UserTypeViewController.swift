@@ -141,6 +141,13 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
         
     }
     
+    func readUserType() -> String {
+        // Keyを指定して読み込み
+        let str: String = userDefaults.object(forKey: "UserType") as! String
+        
+        return str
+    }
+    
 
     /*
     // MARK: - Navigation

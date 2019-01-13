@@ -296,7 +296,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="決定"/>
                                 <connections>
-                                    <segue destination="3e6-S9-FRw" kind="show" id="xwx-Bo-P9W"/>
+                                    <action selector="tapUserTypeOk:" destination="nuB-IX-AHO" eventType="touchUpInside" id="xQ6-pe-2L1"/>
+                                    <segue destination="3e6-S9-FRw" kind="show" identifier="showDepTime" id="xwx-Bo-P9W"/>
                                 </connections>
                             </button>
                         </subviews>

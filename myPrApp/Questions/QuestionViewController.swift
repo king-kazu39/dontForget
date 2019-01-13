@@ -83,6 +83,15 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
     }
     
     
+    
+    @IBAction func tapUserTypeOk(_ sender: Any) {
+        
+        //決定ボタンを押したらUserTypeで選択したものをUserTypeをUserDefaultsに保存する
+        UserTypeViewController().saveUserType(str: selectedImg!)
+        
+    }
+    
+    
 
     /*
     // MARK: - Navigation

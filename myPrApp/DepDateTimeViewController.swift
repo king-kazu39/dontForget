@@ -16,6 +16,14 @@ class DepDateTimeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let lang = LangViewController().readLang()
+        let user = UserTypeViewController().readUserType()
+        
+        print(lang)
+        print(user)
+        
+        
     }
     
     //TODO:出発時刻を設定して決定ボタンを押したらDBに登録する
