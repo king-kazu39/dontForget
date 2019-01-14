@@ -226,11 +226,27 @@
                     </view>
                     <connections>
                         <segue destination="nuB-IX-AHO" kind="show" identifier="toQuestionView" id="zeG-KJ-DhZ"/>
+                        <segue destination="t7Y-4G-1jr" kind="show" identifier="showSetUser" id="3J5-d0-B8s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWJ-9t-zw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2733.75" y="25.35211267605634"/>
+        </scene>
+        <!--Set User View Controller-->
+        <scene sceneID="izk-Yh-hbV">
+            <objects>
+                <viewController id="t7Y-4G-1jr" customClass="SetUserViewController" customModule="myPrApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HYg-CU-Rll">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cfK-xA-l5O"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GU5-Ig-HJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2734" y="782"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="cAl-9V-LGI">
@@ -376,6 +392,7 @@
         <image name="setting.png" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="zeG-KJ-DhZ"/>
         <segue reference="r2v-Up-gte"/>
     </inferredMetricsTieBreakers>
 </document>

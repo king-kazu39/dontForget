@@ -90,14 +90,22 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
         // [indexPath.row] から画像名を探し、UImage を設定
         selectedImage = userImages[indexPath.row]
         
-//        print("選択されたのは\(selectedImage)です")
+        print("選択されたのは\(selectedImage)です")
         
-        //値を保存するためのメソッドを呼び出す
-        saveUserType(str: selectedImage!)
-        
-        if selectedImage != nil {
-            // SubViewController へ遷移するために Segue を呼び出す
+        if selectedImage != nil && selectedImage != "usertype" {
+            
+            //値を保存するためのメソッドを呼び出す
+            saveUserType(str: selectedImage!)
+            
+            // QuestionViewController へ遷移するために Segue を呼び出す
             performSegue(withIdentifier: "toQuestionView",sender: nil)
+        } else if selectedImage == "usertype"{
+            
+            //値を保存するためのメソッドを呼び出す
+            saveSetUser(str: selectedImage!)
+            
+            // QuestionViewController へ遷移するために Segue を呼び出す
+            performSegue(withIdentifier: "showSetUser",sender: nil)
         }
         
     }
@@ -108,6 +116,11 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
             let qtVC: QuestionViewController = (segue.destination as? QuestionViewController)!
             // SubViewController のselectedImgに選択された画像を設定する
             qtVC.selectedImg = selectedImage
+            
+        } else if segue.identifier == "showSetUser" {
+            let stVC: SetUserViewController = (segue.destination as? SetUserViewController)!
+            // SubViewController のselectedImgに選択された画像を設定する
+            stVC.selectedImg = selectedImage
         }
     }
     
@@ -144,6 +157,20 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
     func readUserType() -> String {
         // Keyを指定して読み込み
         let str: String = userDefaults.object(forKey: "UserType") as! String
+        
+        return str
+    }
+    
+    func saveSetUser(str: String){
+        // Keyを指定して保存
+        userDefaults.set(str, forKey: "SetUser")
+        // データの同期
+        userDefaults.synchronize()
+    }
+    
+    func readSetUser() -> String {
+        // Keyを指定して読み込み
+        let str: String = userDefaults.object(forKey: "SetUser") as! String
         
         return str
     }
