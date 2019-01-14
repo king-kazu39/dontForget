@@ -12,13 +12,14 @@ class DepDateTimeViewController: UIViewController {
 
     @IBOutlet weak var depTime: UIDatePicker!
     
+    
+    let lang = LangViewController().readLang()
+    let user = UserTypeViewController().readUserType()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        let lang = LangViewController().readLang()
-        let user = UserTypeViewController().readUserType()
         
         print(lang)
         print(user)
@@ -76,6 +77,13 @@ class DepDateTimeViewController: UIViewController {
     
     func myMoveTOP(){
         print("TOPに戻ります")
+        
+        if lang != nil && user != nil {
+            //settingLangにJapaneseかEnglishがあれば次画面に遷移する
+            self.performSegue(withIdentifier: "showTop", sender: nil)
+        }
+        
+        
     }
     
     

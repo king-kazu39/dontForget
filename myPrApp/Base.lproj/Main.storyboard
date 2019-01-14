@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQa-3w-F9E">
-                                <rect key="frame" x="90" y="125" width="140" height="141"/>
+                                <rect key="frame" x="90" y="81" width="140" height="141"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sQa-3w-F9E" secondAttribute="height" multiplier="140:141" id="2KV-ao-dfG"/>
                                     <constraint firstAttribute="height" constant="141" id="uZj-7M-VOR"/>
@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENl-9E-bv7">
-                                <rect key="frame" x="91" y="382" width="141" height="97"/>
+                                <rect key="frame" x="91" y="338" width="141" height="141"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ENl-9E-bv7" secondAttribute="height" multiplier="1:1" id="ohx-XR-frQ"/>
                                 </constraints>
@@ -118,7 +118,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Jz-02-x9m">
-                                <rect key="frame" x="85" y="128" width="150" height="106"/>
+                                <rect key="frame" x="85" y="84" width="150" height="150"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLI-xX-RUM">
                                 <rect key="frame" x="85" y="313" width="150" height="64"/>
@@ -345,6 +345,7 @@
                     </view>
                     <connections>
                         <outlet property="depTime" destination="Xw2-wY-92h" id="aLH-m0-aRK"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showTop" id="r2v-Up-gte"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hwa-L6-Bja" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -374,4 +375,7 @@
         <image name="preparation.png" width="256" height="256"/>
         <image name="setting.png" width="256" height="256"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="r2v-Up-gte"/>
+    </inferredMetricsTieBreakers>
 </document>
