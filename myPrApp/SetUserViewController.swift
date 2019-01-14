@@ -12,6 +12,13 @@ class SetUserViewController: UIViewController {
 
     var selectedImg:String?
     
+    @IBOutlet weak var setUserName: UITextField!
+    
+    @IBOutlet weak var userDem: UIButton!
+
+    @IBOutlet weak var setUserImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +29,40 @@ class SetUserViewController: UIViewController {
         
         print(userType)
         
+//        setUserImage()
+        
+        setUserImage.image = UIImage(named: "usertype")
+        
     }
+    
+    
+    
+    
+    
+    
+    
+    
+//    func setUserImage(){
+//        //UIImageViewのインスタンス作成
+//        let imageView = UIImageView()
+//
+//        //TODO:後で配置を修正する
+//        //imageViewの位置とサイズを設定
+//        imageView.frame = CGRect(x: self.view.frame.width / 2 - 150, y: self.view.frame.height / 2 - 150, width: 200, height: 200)
+//
+//        //画像を生成。
+//        let image = UIImage(named:"usertype")!
+//
+//        //生成した画像をimageViewに設定
+//        imageView.image = image
+//
+//        //viewにimageViewをsubViewとして追加
+//        self.view.addSubview(imageView)
+//    }
+    
+    
+    
+    
     
 
     /*
