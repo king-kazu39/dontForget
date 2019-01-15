@@ -12,7 +12,7 @@ class DepDateTimeViewController: UIViewController {
 
     @IBOutlet weak var depTime: UIDatePicker!
     
-    
+    //言語設定ページとうユーザータイプ設定ページで保存したデータを参照してくる
     let lang = LangViewController().readLang()
     let user = UserTypeViewController().readUserType()
     
@@ -67,7 +67,7 @@ class DepDateTimeViewController: UIViewController {
     func myMessage(){
         print("OK押されました")
         
-        //アラート画面を
+        //アラート画面を表示
         let alert = UIAlertController(title: "設定が完了しました", message: "TOPに戻ります。よろしいですか？", preferredStyle: .alert)
         
         //OKが押されたときにmyMessageの中に書いた処理を実行するように設定している

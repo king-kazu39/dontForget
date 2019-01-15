@@ -8,6 +8,8 @@
 
 import UIKit
 
+var newUser:String?
+
 class SetUserViewController: UIViewController {
 
     var selectedImg:String?
@@ -36,7 +38,33 @@ class SetUserViewController: UIViewController {
     }
     
     
+    @IBAction func setNewUser(_ sender: Any) {
+        
+        newUser = setUserName.text!
+        print(newUser)
+        
+        if newUser == "" {
+           alertUser()
+            print("入力欄が空です")
+        } else if newUser != "" {
+            print("ユーザーデータを保存します")
+        }
+ 
+    }
     
+    //OKが押されたときにTOP画面に遷移するの中に書いた処理を実行するように設定
+    func alertUser(){
+        
+        //アラート画面を表示
+        let alert = UIAlertController(title: "ユーザー名が設定されていません", message: "ユーザー名を設定してください。", preferredStyle: .alert)
+        
+        //OKが押されたときにmyMessageの中に書いた処理を実行するように設定している
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(action: UIAlertAction!) -> Void in print("OKが押されました")}))
+        
+        //アラート画面を表示する
+        present(alert,animated: true)
+        
+    }
     
     
     

@@ -252,6 +252,9 @@
                                 <rect key="frame" x="145" y="449" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="決定"/>
+                                <connections>
+                                    <action selector="setNewUser:" destination="t7Y-4G-1jr" eventType="touchUpInside" id="577-Ek-oZ0"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6RX-8K-wTg">
                                 <rect key="frame" x="60" y="107" width="200" height="200"/>
@@ -265,6 +268,7 @@
                         <outlet property="setUserImage" destination="6RX-8K-wTg" id="Xmw-Iz-fRc"/>
                         <outlet property="setUserName" destination="PGm-zE-SnL" id="ojk-qy-Gzf"/>
                         <outlet property="userDem" destination="7Rk-3G-Uqy" id="Gqi-RA-zdw"/>
+                        <segue destination="8hy-IA-TBQ" kind="show" identifier="returnUserType" id="7Om-FH-s1u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GU5-Ig-HJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -415,6 +419,7 @@
         <image name="setting.png" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="7Om-FH-s1u"/>
         <segue reference="r2v-Up-gte"/>
     </inferredMetricsTieBreakers>
 </document>
