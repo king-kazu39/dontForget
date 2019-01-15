@@ -44,15 +44,18 @@ class DepDateTimeViewController: UIViewController {
     }
     
     
-    //TODO:「キャンセル」ボタンを追加する・・時間設定をやり直すためのキャンセル
     //OKボタンが押された時に発動する
     @IBAction func tapDtm(_ sender: Any) {
     
         //アラートオブジェクトを作る
         let alert = UIAlertController(title: "出発時間を設定します", message: "よろしいですか？", preferredStyle: .alert)
         
+        //キャンセルが押されたときにCancelを出力して現画面に留まるように設定している
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: {(action: UIAlertAction!) -> Void in print("Cancel")}))
+    
         //OKが押されたときにmyMessageの中に書いた処理を実行するように設定している
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in self.myMessage()}))
+        
         
         //アラート画面を表示する
         present(alert,animated: true)
