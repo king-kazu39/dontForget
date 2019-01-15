@@ -8,6 +8,8 @@
 
 import UIKit
 
+var setDepDate:String?
+
 class DepDateTimeViewController: UIViewController {
 
     @IBOutlet weak var depTime: UIDatePicker!
@@ -33,13 +35,14 @@ class DepDateTimeViewController: UIViewController {
         print(sender)
         
         let df = DateFormatter() //書式を指定する定数
-        df.dateFormat = "yyyy年MM月dd日 HH:mm:ss"
+        df.dateFormat = "yyyy年MM月dd日 HH:mm"
         
         //この書式を使って、日付型から文字列型に変換
         var strDate:String = df.string(from: sender.date)
         
         print(strDate)
         
+        setDepDate = strDate
         
     }
     
@@ -84,11 +87,26 @@ class DepDateTimeViewController: UIViewController {
         if lang != nil && user != nil {
             //settingLangにJapaneseかEnglishがあれば次画面に遷移する
             self.performSegue(withIdentifier: "showTop", sender: nil)
+            saveDepData(str: setDepDate!)
         }
-        
         
     }
     
+    
+    func saveDepData (str: String){
+        // Keyを指定して保存
+        userDefaults.set(str, forKey: "DepData")
+        // データの同期
+        userDefaults.synchronize()
+        
+    }
+    
+    func readDepData() -> String {
+        // Keyを指定して読み込み
+        let str: String = userDefaults.object(forKey: "DepData") as! String
+        
+        return str
+    }
     
     
 
