@@ -48,11 +48,14 @@ class SetUserViewController: UIViewController {
             print("入力欄が空です")
         } else if newUser != "" {
             print("ユーザーデータを保存します")
+            
+            confirmUserType()
+            
         }
  
     }
     
-    //OKが押されたときにTOP画面に遷移するの中に書いた処理を実行するように設定
+    //ユーザータイプ名がだった時に出すアラート（バリデーション）
     func alertUser(){
         
         //アラート画面を表示
@@ -64,6 +67,29 @@ class SetUserViewController: UIViewController {
         //アラート画面を表示する
         present(alert,animated: true)
         
+    }
+    
+    //OKボタンが押された時に発動する
+    func confirmUserType() {
+        
+        //アラートオブジェクトを作る
+        let alert = UIAlertController(title: "ユーザー名を設定します", message: "よろしいですか？", preferredStyle: .alert)
+        
+        //キャンセルが押されたときにCancelを出力して現画面に留まるように設定している
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: {(action: UIAlertAction!) -> Void in print("Cancel")}))
+        
+        //OKが押されたときにmyMessageの中に書いた処理を実行するように設定している
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in self.returnUser()}))
+        
+        
+        //アラート画面を表示する
+        present(alert,animated: true)
+        
+    }
+    
+    func returnUser(){
+        // ViewControllerへ戻るために Segue を呼び出す
+        performSegue(withIdentifier: "returnUserType",sender: nil)
     }
     
     
