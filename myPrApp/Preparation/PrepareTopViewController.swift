@@ -10,16 +10,21 @@ import UIKit
 
 class PrepareTopViewController: UIViewController {
 
+    //言語設定で表示を変えるために名前をつけた
+    //TODO：言語設定で表示を変える
+    @IBOutlet weak var textPreSent: UITextView!
+    @IBOutlet weak var textPreDepWord: UITextView!
+    @IBOutlet weak var labelPreUserType: UILabel!
     
-    @IBOutlet weak var pepareLabel: UILabel!
-    
+    //設定した値で表示を変えるために名前をつけた
+    //TODO：設定した値で表示を変える
+    @IBOutlet weak var imgUserType: UIImageView!
+    @IBOutlet weak var PreDepTime: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-//        pepareLabel.text = LangViewController().readLang()
         
         
         print(LangViewController().readLang())
@@ -28,6 +33,18 @@ class PrepareTopViewController: UIViewController {
         
         
     }
+    
+    
+    @IBAction func tapGo(_ sender: Any) {
+        
+        //settingLangにJapaneseかEnglishがあれば次画面に遷移する
+        self.performSegue(withIdentifier: "showConfirmBelonging", sender: nil)
+        
+    }
+    
+    
+    
+    
     
 
     /*

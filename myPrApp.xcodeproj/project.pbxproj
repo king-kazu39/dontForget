@@ -13,6 +13,7 @@
 		E52D624C21E5DF2F00754FCE /* DepDateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52D624B21E5DF2F00754FCE /* DepDateTimeViewController.swift */; };
 		E55BFF2121EC63ED00CF1CFC /* SetUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BFF2021EC63ED00CF1CFC /* SetUserViewController.swift */; };
 		E55BFF2321EDBA7300CF1CFC /* PrepareButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BFF2221EDBA7300CF1CFC /* PrepareButtonViewController.swift */; };
+		E55BFF2821EDC64400CF1CFC /* BelongingConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BFF2721EDC64400CF1CFC /* BelongingConfirmViewController.swift */; };
 		E5EA43A021D8D0E00053FAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */; };
 		E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA43A121D8D0E00053FAEC /* ViewController.swift */; };
 		E5EA43A521D8D0E00053FAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EA43A321D8D0E00053FAEC /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		E52D624B21E5DF2F00754FCE /* DepDateTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepDateTimeViewController.swift; sourceTree = "<group>"; };
 		E55BFF2021EC63ED00CF1CFC /* SetUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUserViewController.swift; sourceTree = "<group>"; };
 		E55BFF2221EDBA7300CF1CFC /* PrepareButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareButtonViewController.swift; sourceTree = "<group>"; };
+		E55BFF2721EDC64400CF1CFC /* BelongingConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelongingConfirmViewController.swift; sourceTree = "<group>"; };
 		E5EA439C21D8D0E00053FAEC /* myPrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5EA43A121D8D0E00053FAEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				E55BFF2421EDBA8300CF1CFC /* Preparation */,
 				E52D624B21E5DF2F00754FCE /* DepDateTimeViewController.swift */,
 				E5EA43A321D8D0E00053FAEC /* Main.storyboard */,
+				E55BFF2721EDC64400CF1CFC /* BelongingConfirmViewController.swift */,
 				E5EA43B621D8D1890053FAEC /* setting.png */,
 				E5EA43B421D8D1520053FAEC /* preparation.png */,
 				E5EA43BA21D9CBD80053FAEC /* Langage.png */,
@@ -207,6 +210,7 @@
 				E5EA43BD21DA09990053FAEC /* UserTypeViewController.swift in Sources */,
 				E55BFF2321EDBA7300CF1CFC /* PrepareButtonViewController.swift in Sources */,
 				E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */,
+				E55BFF2821EDC64400CF1CFC /* BelongingConfirmViewController.swift in Sources */,
 				E524E39121DF3D8D009AF942 /* PrepareTopViewController.swift in Sources */,
 				E5EA43A021D8D0E00053FAEC /* AppDelegate.swift in Sources */,
 			);
