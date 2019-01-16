@@ -8,7 +8,7 @@
 
 import UIKit
 
-var language: String?
+
 var userTypes:[String?] = []
 //var selectedImage: String?
 
@@ -41,16 +41,16 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
         // Do any additional setup after loading the view.
       
       //クラス外に定義したlanguage変数に、前画面で保存した値をUserDefaultsから読み込んで格納する
-      language = LangViewController().readLang()
+      settingLang = LangViewController().readLang()
       //languageの中身をコンソールで確認する
-      print("read関数に保存されている値は\(language)")
+      print("read関数に保存されている値は\(settingLang)")
 
         //UserDefaultsで読み込んだ言語設定の値を判断する
         //Japaneseに設定していたらUserTypesに日本語対応の配列を入れる
-        if language == "Japanese" {
+        if settingLang == "Japanese" {
             userTypes = userJpns
         //Englishに設定していたらUserTypesに日本語対応の配列を入れる
-        } else if language == "English" {
+        } else if settingLang == "English" {
             userTypes = userEngs
         }
 

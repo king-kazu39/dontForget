@@ -33,15 +33,14 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
     func tableView(_ table: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        
-        language = LangViewController().readLang()
+        print("@質問設定：\(settingLang)")
         
         //言語設定がJapaneseになっていたら呼び出す
-        if language == "Japanese" {
+        if settingLang == "Japanese" {
             subQuestionViewController().selectJpn(selectedImg: selectedImg!)
         
         //言語設定がEnglishになっていたら呼び出す
-        } else if language == "English" {
+        } else if settingLang == "English" {
             subQuestionViewController().selectEng(selectedImg: selectedImg!)
             
         }
@@ -88,6 +87,8 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
         
         //決定ボタンを押したらUserTypeで選択したものをUserTypeをUserDefaultsに保存する
         UserTypeViewController().saveUserType(str: selectedImg!)
+        
+        userType = UserTypeViewController().readUserType()
         
     }
     

@@ -11,10 +11,12 @@ import UIKit
 //別クラスでも使えるようにするためにクラス外でインスタンス化する
 let userDefaults = UserDefaults.standard
 
+//言語設定をするために使うメンバ変数用意
+var settingLang:String?
+
 class LangViewController: UIViewController {
     
-    //言語設定をするために使うメンバ変数用意
-    var settingLang:String?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

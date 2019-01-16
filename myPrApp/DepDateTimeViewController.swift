@@ -14,17 +14,14 @@ class DepDateTimeViewController: UIViewController {
 
     @IBOutlet weak var depTime: UIDatePicker!
     
-    //言語設定ページとうユーザータイプ設定ページで保存したデータを参照してくる
-    let lang = LangViewController().readLang()
-    let user = UserTypeViewController().readUserType()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        print(lang)
-        print(user)
+        print("@出発時間設定:\(settingLang)")
+        print("@出発時間設定:\(userType)")
         
         
     }
@@ -40,9 +37,9 @@ class DepDateTimeViewController: UIViewController {
         //この書式を使って、日付型から文字列型に変換
         var strDate:String = df.string(from: sender.date)
         
-        print(strDate)
-        
         setDepDate = strDate
+        
+        print(setDepDate)
         
     }
     
@@ -74,17 +71,17 @@ class DepDateTimeViewController: UIViewController {
         let alert = UIAlertController(title: "設定が完了しました", message: "TOPに戻ります。よろしいですか？", preferredStyle: .alert)
         
         //OKが押されたときにmyMessageの中に書いた処理を実行するように設定している
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in self.myMoveTOP()}))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in self.myMoveTop()}))
         
         //アラート画面を表示する
         present(alert,animated: true)
         
     }
     
-    func myMoveTOP(){
+    func myMoveTop(){
         print("TOPに戻ります")
         
-        if lang != nil && user != nil {
+        if settingLang != nil && userType != nil {
             //settingLangにJapaneseかEnglishがあれば次画面に遷移する
             self.performSegue(withIdentifier: "showTop", sender: nil)
             saveDepData(str: setDepDate!)

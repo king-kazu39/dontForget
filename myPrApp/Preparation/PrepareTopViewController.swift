@@ -21,13 +21,20 @@ class PrepareTopViewController: UIViewController {
     @IBOutlet weak var imgUserType: UIImageView!
     @IBOutlet weak var PreDepTime: UITextView!
     
+    let PreTopJpn:String = "出かける準備をしましょう！"
+    let PreTopEng:String = "Let's prepare for going out！"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        settingLang = LangViewController().readLang()
         
-        print(LangViewController().readLang())
+        
+        
+        print(settingLang)
         print(UserTypeViewController().readUserType())
         print(DepDateTimeViewController().readDepData())
         
@@ -37,10 +44,18 @@ class PrepareTopViewController: UIViewController {
     
     @IBAction func tapGo(_ sender: Any) {
         
-        //settingLangにJapaneseかEnglishがあれば次画面に遷移する
+        //ボタンを押したら次画面に遷移する
         self.performSegue(withIdentifier: "showConfirmBelonging", sender: nil)
         
     }
+    
+    
+    func langPreparation(){
+        if settingLang == "Japanese" {
+            
+        }
+    }
+    
     
     
     
