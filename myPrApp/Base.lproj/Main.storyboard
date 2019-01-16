@@ -504,8 +504,7 @@
         <image name="setting.png" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3J5-d0-B8s"/>
-        <segue reference="7Om-FH-s1u"/>
+        <segue reference="kyg-io-Vmq"/>
         <segue reference="r2v-Up-gte"/>
     </inferredMetricsTieBreakers>
 </document>
