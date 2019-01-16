@@ -14,6 +14,7 @@
 		E55BFF2121EC63ED00CF1CFC /* SetUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BFF2021EC63ED00CF1CFC /* SetUserViewController.swift */; };
 		E55BFF2321EDBA7300CF1CFC /* PrepareButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BFF2221EDBA7300CF1CFC /* PrepareButtonViewController.swift */; };
 		E55BFF2821EDC64400CF1CFC /* BelongingConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BFF2721EDC64400CF1CFC /* BelongingConfirmViewController.swift */; };
+		E55BFF4D21EF131800CF1CFC /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BFF4C21EF131800CF1CFC /* cameraViewController.swift */; };
 		E5EA43A021D8D0E00053FAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */; };
 		E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA43A121D8D0E00053FAEC /* ViewController.swift */; };
 		E5EA43A521D8D0E00053FAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EA43A321D8D0E00053FAEC /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		E55BFF2021EC63ED00CF1CFC /* SetUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUserViewController.swift; sourceTree = "<group>"; };
 		E55BFF2221EDBA7300CF1CFC /* PrepareButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareButtonViewController.swift; sourceTree = "<group>"; };
 		E55BFF2721EDC64400CF1CFC /* BelongingConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelongingConfirmViewController.swift; sourceTree = "<group>"; };
+		E55BFF4C21EF131800CF1CFC /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
 		E5EA439C21D8D0E00053FAEC /* myPrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5EA43A121D8D0E00053FAEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,46 @@
 			path = Preparation;
 			sourceTree = "<group>";
 		};
+		E55BFF4E21EF133900CF1CFC /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E55BFF4C21EF131800CF1CFC /* cameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E55BFF4F21EF135800CF1CFC /* BelongingConfirm */ = {
+			isa = PBXGroup;
+			children = (
+				E55BFF2721EDC64400CF1CFC /* BelongingConfirmViewController.swift */,
+			);
+			path = BelongingConfirm;
+			sourceTree = "<group>";
+		};
+		E55BFF5021EF139900CF1CFC /* SetUser */ = {
+			isa = PBXGroup;
+			children = (
+				E55BFF2021EC63ED00CF1CFC /* SetUserViewController.swift */,
+			);
+			path = SetUser;
+			sourceTree = "<group>";
+		};
+		E55BFF5121EF13C200CF1CFC /* DepDate */ = {
+			isa = PBXGroup;
+			children = (
+				E52D624B21E5DF2F00754FCE /* DepDateTimeViewController.swift */,
+			);
+			path = DepDate;
+			sourceTree = "<group>";
+		};
+		E55BFF5221EF13E500CF1CFC /* LangView */ = {
+			isa = PBXGroup;
+			children = (
+				E5EA43B821D9130E0053FAEC /* LangViewController.swift */,
+			);
+			path = LangView;
+			sourceTree = "<group>";
+		};
 		E5EA439321D8D0E00053FAEC = {
 			isa = PBXGroup;
 			children = (
@@ -107,18 +149,19 @@
 			isa = PBXGroup;
 			children = (
 				E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */,
-				E5EA43B821D9130E0053FAEC /* LangViewController.swift */,
 				E5EA43A121D8D0E00053FAEC /* ViewController.swift */,
+				E55BFF5221EF13E500CF1CFC /* LangView */,
+				E55BFF5021EF139900CF1CFC /* SetUser */,
 				E505D82721E5CC3900F1866E /* UserTypes */,
-				E55BFF2021EC63ED00CF1CFC /* SetUserViewController.swift */,
 				E505D82421E5BE1E00F1866E /* Questions */,
 				E55BFF2421EDBA8300CF1CFC /* Preparation */,
-				E52D624B21E5DF2F00754FCE /* DepDateTimeViewController.swift */,
-				E5EA43A321D8D0E00053FAEC /* Main.storyboard */,
-				E55BFF2721EDC64400CF1CFC /* BelongingConfirmViewController.swift */,
-				E5EA43B621D8D1890053FAEC /* setting.png */,
-				E5EA43B421D8D1520053FAEC /* preparation.png */,
+				E55BFF4E21EF133900CF1CFC /* Camera */,
+				E55BFF4F21EF135800CF1CFC /* BelongingConfirm */,
+				E55BFF5121EF13C200CF1CFC /* DepDate */,
 				E5EA43BA21D9CBD80053FAEC /* Langage.png */,
+				E5EA43B421D8D1520053FAEC /* preparation.png */,
+				E5EA43B621D8D1890053FAEC /* setting.png */,
+				E5EA43A321D8D0E00053FAEC /* Main.storyboard */,
 				E5EA43A921D8D0E10053FAEC /* Assets.xcassets */,
 				E5EA43AB21D8D0E10053FAEC /* LaunchScreen.storyboard */,
 				E5EA43AE21D8D0E10053FAEC /* Info.plist */,
@@ -212,6 +255,7 @@
 				E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */,
 				E55BFF2821EDC64400CF1CFC /* BelongingConfirmViewController.swift in Sources */,
 				E524E39121DF3D8D009AF942 /* PrepareTopViewController.swift in Sources */,
+				E55BFF4D21EF131800CF1CFC /* cameraViewController.swift in Sources */,
 				E5EA43A021D8D0E00053FAEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
