@@ -18,7 +18,7 @@ class SetUserViewController: UIViewController {
     
     @IBOutlet weak var userDem: UIButton!
 
-    @IBOutlet weak var setUserImage: UIImageView!
+    
     
     
     override func viewDidLoad() {
@@ -31,9 +31,18 @@ class SetUserViewController: UIViewController {
         
         print(userType)
         
-        setUserImage.image = UIImage(named: "usertype")
         
     }
+    
+    
+    @IBAction func setUserImage(_ sender: Any) {
+        
+        //カメラモード画面に遷移
+        performSegue(withIdentifier: "showUserImage",sender: nil)
+        
+    }
+    
+    
     
     
     @IBAction func setNewUser(_ sender: Any) {
