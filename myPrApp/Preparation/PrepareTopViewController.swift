@@ -21,8 +21,8 @@ class PrepareTopViewController: UIViewController {
     @IBOutlet weak var imgUserType: UIImageView!
     @IBOutlet weak var PreDepTime: UITextView!
     
-    let PreTopJpn:String = "出かける準備をしましょう！"
-    let PreTopEng:String = "Let's prepare for going out！"
+    let PreTopJpn:Dictionary = ["title":"出かける準備をしましょう！","Deptime":"出発時間"]
+    let PreTopEng:Dictionary = ["title":"Let's prepare for going out！","Deptime":"Departure time"]
     
     
     override func viewDidLoad() {
@@ -31,6 +31,25 @@ class PrepareTopViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         settingLang = LangViewController().readLang()
+        
+        if settingLang == "Japanese"{
+            textPreSent.text = PreTopJpn["title"]
+            textPreDepWord.text = PreTopJpn["Deptime"]
+            
+            //TODO:DBからデータを取得して表示するようにする
+            labelPreUserType.text = userType
+            PreDepTime.text = setDepDate
+//            imgUserType.image = selectedImage
+
+        } else if settingLang == "English" {
+            textPreSent.text = PreTopEng["title"]
+            textPreDepWord.text = PreTopEng["Deptime"]
+            
+            //TODO:DBからデータを取得して表示するようにする
+            labelPreUserType.text = userType
+            PreDepTime.text = setDepDate
+        }
+        
         
         
         

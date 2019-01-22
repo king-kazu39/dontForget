@@ -32,7 +32,7 @@ class DepDateTimeViewController: UIViewController {
         print(sender)
         
         let df = DateFormatter() //書式を指定する定数
-        df.dateFormat = "yyyy年MM月dd日 HH:mm"
+        df.dateFormat = "HH:mm"
         
         //この書式を使って、日付型から文字列型に変換
         var strDate:String = df.string(from: sender.date)

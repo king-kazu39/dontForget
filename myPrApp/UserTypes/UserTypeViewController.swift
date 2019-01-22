@@ -10,14 +10,14 @@ import UIKit
 
 
 var userTypes:[String?] = []
-//var selectedImage: String?
+var selectedImage: String?
 
 //プロトコル追加
 class UserTypeViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
 
     
     //メンバ変数用意
-    var selectedImage: String?
+//    var selectedImage: String?
     
     let userImages = [
         "singleman","singlewoman","married","pet","student",
