@@ -69,8 +69,8 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
         imageView2.image = img2
         
         // Tag番号 ３ で UILabel インスタンスの生成
-        let label = cell.viewWithTag(3) as! UILabel
-        label.text = String(describing: labelArray[indexPath.row] as! String)
+        let textView = cell.viewWithTag(3) as! UITextView
+        textView.text = String(describing: labelArray[indexPath.row] as! String)
         
         return cell
     }
@@ -78,7 +78,7 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
     // Cell の高さを220にする
     func tableView(_ table: UITableView,
                    heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 220.0
+        return 250.0
     }
     
     
