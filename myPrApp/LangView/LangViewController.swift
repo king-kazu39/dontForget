@@ -26,22 +26,6 @@ class LangViewController: UIViewController {
         // UserDefaultsのデフォルト値
         userDefaults.register(defaults: ["DataStore": "default"])
         
-        //UIImageViewのインスタンス作成
-        let imageView = UIImageView()
-        
-        //TODO:後で配置を修正する
-        //imageViewの位置とサイズを設定
-        imageView.frame = CGRect(x: self.view.frame.width / 2 - 150, y: self.view.frame.height / 2 - 150, width: 200, height: 200)
-        
-        //画像を生成。
-        let image = UIImage(named:"Langage.png")!
-        
-        //生成した画像をimageViewに設定
-        imageView.image = image
-        
-        //viewにimageViewをsubViewとして追加
-        self.view.addSubview(imageView)
-        
     }
     
     

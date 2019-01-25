@@ -224,13 +224,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Jz-02-x9m">
-                                <rect key="frame" x="32" y="240" width="256" height="120"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Langage.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Jz-02-x9m">
+                                <rect key="frame" x="50" y="200" width="220" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="lz6-XU-KIY"/>
+                                    <constraint firstAttribute="height" constant="120" id="mXT-iJ-SbW"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLI-xX-RUM" customClass="Button_Custom" customModule="myPrApp" customModuleProvider="target">
-                                <rect key="frame" x="90" y="380" width="140" height="64"/>
+                                <rect key="frame" x="90" y="360" width="140" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="TAn-u5-6uc"/>
+                                    <constraint firstAttribute="height" constant="70" id="5NL-gR-bsk"/>
+                                    <constraint firstAttribute="width" constant="140" id="j4q-Mu-NCd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Japanese"/>
@@ -250,9 +255,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1H-6b-T2a" customClass="Button_Custom" customModule="myPrApp" customModuleProvider="target">
-                                <rect key="frame" x="100" y="474" width="120" height="70"/>
+                                <rect key="frame" x="90" y="460" width="140" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="K3Q-qN-XUL"/>
+                                    <constraint firstAttribute="height" constant="70" id="fjD-R8-aeW"/>
+                                    <constraint firstAttribute="width" constant="140" id="zkM-KP-CHD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="English"/>
@@ -272,10 +278,11 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="使用する言語を 設定してください。" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y8R-0u-mVa">
-                                <rect key="frame" x="15" y="120" width="290" height="90"/>
+                                <rect key="frame" x="15" y="80" width="290" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="sfZ-3i-93Y"/>
+                                    <constraint firstAttribute="width" constant="290" id="CB2-lB-93q"/>
+                                    <constraint firstAttribute="height" constant="90" id="rfU-vS-zG9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -283,19 +290,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96769615050000002" green="1" blue="0.98192443569999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="3Jz-02-x9m" firstAttribute="centerX" secondItem="cLI-xX-RUM" secondAttribute="centerX" id="1cK-am-gKA"/>
-                            <constraint firstItem="cLI-xX-RUM" firstAttribute="centerX" secondItem="V1H-6b-T2a" secondAttribute="centerX" id="BpF-ij-gea"/>
-                            <constraint firstItem="Y8R-0u-mVa" firstAttribute="centerX" secondItem="ZeP-MF-Rg8" secondAttribute="centerX" id="Hcc-Po-3h2"/>
-                            <constraint firstItem="cLI-xX-RUM" firstAttribute="leading" secondItem="P8r-nN-fBe" secondAttribute="leading" constant="90" id="Hmf-GJ-Nbu"/>
-                            <constraint firstItem="3Jz-02-x9m" firstAttribute="leading" secondItem="P8r-nN-fBe" secondAttribute="leading" constant="32" id="SkN-Mg-tC9"/>
-                            <constraint firstItem="V1H-6b-T2a" firstAttribute="top" secondItem="cLI-xX-RUM" secondAttribute="bottom" constant="30" id="epi-pZ-UdT"/>
-                            <constraint firstItem="cLI-xX-RUM" firstAttribute="top" secondItem="3Jz-02-x9m" secondAttribute="bottom" constant="20" id="ibz-yL-VJH"/>
-                            <constraint firstItem="P8r-nN-fBe" firstAttribute="bottom" secondItem="V1H-6b-T2a" secondAttribute="bottom" constant="24" id="nnc-ci-FBh"/>
-                            <constraint firstItem="Y8R-0u-mVa" firstAttribute="top" secondItem="P8r-nN-fBe" secondAttribute="top" constant="100" id="nw6-XL-An0"/>
-                            <constraint firstItem="Y8R-0u-mVa" firstAttribute="leading" secondItem="P8r-nN-fBe" secondAttribute="leading" constant="15" id="o7a-Px-j6J"/>
-                            <constraint firstItem="3Jz-02-x9m" firstAttribute="top" secondItem="Y8R-0u-mVa" secondAttribute="bottom" constant="30" id="qSL-Na-hWW"/>
-                            <constraint firstItem="V1H-6b-T2a" firstAttribute="leading" secondItem="P8r-nN-fBe" secondAttribute="leading" constant="100" id="rPE-IX-pYK"/>
-                            <constraint firstItem="Y8R-0u-mVa" firstAttribute="centerX" secondItem="3Jz-02-x9m" secondAttribute="centerX" id="vJX-hF-3OI"/>
+                            <constraint firstItem="3Jz-02-x9m" firstAttribute="centerX" secondItem="ZeP-MF-Rg8" secondAttribute="centerX" id="DEA-K3-YIh"/>
+                            <constraint firstItem="cLI-xX-RUM" firstAttribute="leading" secondItem="P8r-nN-fBe" secondAttribute="leading" constant="90" id="DRw-R4-8Ly"/>
+                            <constraint firstItem="Y8R-0u-mVa" firstAttribute="top" secondItem="P8r-nN-fBe" secondAttribute="top" constant="60" id="E5K-Hu-rwq"/>
+                            <constraint firstItem="V1H-6b-T2a" firstAttribute="top" secondItem="cLI-xX-RUM" secondAttribute="bottom" constant="30" id="En0-Vg-p40"/>
+                            <constraint firstItem="P8r-nN-fBe" firstAttribute="trailing" secondItem="V1H-6b-T2a" secondAttribute="trailing" constant="90" id="FdK-lf-JhG"/>
+                            <constraint firstItem="3Jz-02-x9m" firstAttribute="top" secondItem="Y8R-0u-mVa" secondAttribute="bottom" constant="30" id="IAi-8l-ZL5"/>
+                            <constraint firstItem="cLI-xX-RUM" firstAttribute="top" secondItem="3Jz-02-x9m" secondAttribute="bottom" constant="40" id="L4x-4Z-vVO"/>
+                            <constraint firstItem="Y8R-0u-mVa" firstAttribute="centerX" secondItem="ZeP-MF-Rg8" secondAttribute="centerX" id="l17-e9-OqO"/>
+                            <constraint firstItem="V1H-6b-T2a" firstAttribute="leading" secondItem="P8r-nN-fBe" secondAttribute="leading" constant="90" id="qoV-pr-SLu"/>
+                            <constraint firstItem="P8r-nN-fBe" firstAttribute="trailing" secondItem="cLI-xX-RUM" secondAttribute="trailing" constant="90" id="yD6-oP-qcz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P8r-nN-fBe"/>
                     </view>
@@ -654,6 +658,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Langage.png" width="256" height="256"/>
         <image name="arrow.png" width="256" height="256"/>
         <image name="go" width="256" height="256"/>
         <image name="preparation.png" width="256" height="256"/>
@@ -662,7 +667,7 @@
         <image name="usertype" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7Om-FH-s1u"/>
+        <segue reference="kyg-io-Vmq"/>
         <segue reference="r2v-Up-gte"/>
     </inferredMetricsTieBreakers>
 </document>
