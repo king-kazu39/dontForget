@@ -60,13 +60,15 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
         
         let img2 = UIImage(named: "trush")
         
+        //TODO:ボタンに変更する
         // Tag番号 1 で UIImageView インスタンスの生成1
         let imageView = cell.viewWithTag(1) as! UIImageView
         imageView.image = img
         
-        // Tag番号 ２ で UIImageView インスタンスの生成2
-        let imageView2 = cell.viewWithTag(2) as! UIImageView
-        imageView2.image = img2
+        
+//        // Tag番号 ２ で UIImageView インスタンスの生成2
+//        let imageView2 = cell.viewWithTag(2) as! UIImageView
+//        imageView2.image = img2
         
         // Tag番号 ３ で UILabel インスタンスの生成
         let textView = cell.viewWithTag(3) as! UITextView
@@ -81,7 +83,27 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
         return 250.0
     }
     
+    //TODO:削除処理を後で追加
+    @IBAction func deleteQuestion(_ sender: UIButton) {
+        
+        //アラートオブジェクトを作る
+        let alert = UIAlertController(title: "削除します", message: "よろしいですか？", preferredStyle: .alert)
+        
+        //キャンセルが押されたときにCancelを出力して現画面に留まるように設定している
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: {(action: UIAlertAction!) -> Void in print("Cancel")}))
+        
+        //OKが押されたときにmyMessageの中に書いた処理を実行するように設定している
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in self.deleteQstData()}))
+        
+        
+        //アラート画面を表示する
+        present(alert,animated: true)
+        
+    }
     
+    func deleteQstData(){
+        print("質問を削除しました")
+    }
     
     @IBAction func tapUserTypeOk(_ sender: Any) {
         
