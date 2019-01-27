@@ -58,12 +58,12 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
         
         let img = UIImage(named: questImg[indexPath.row]!)
         
-        let img2 = UIImage(named: "trush")
+//        let img2 = UIImage(named: "trush")
         
         //TODO:ボタンに変更する
         // Tag番号 1 で UIImageView インスタンスの生成1
-        let imageView = cell.viewWithTag(1) as! UIImageView
-        imageView.image = img
+        let imageView = cell.viewWithTag(1) as! UIButton
+        imageView.setImage(img, for: .normal)
         
         
 //        // Tag番号 ２ で UIImageView インスタンスの生成2
@@ -115,16 +115,10 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
     }
     
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tapQuestItem(_ sender: UIButton) {
+        performSegue(withIdentifier: "showItemCamera",sender: nil)
     }
-    */
-
+    
+    
 
 }

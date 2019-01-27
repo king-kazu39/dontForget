@@ -467,6 +467,15 @@
                     <view key="view" contentMode="scaleToFill" id="OVS-Rf-1i4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="カメラモード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uj0-rJ-xgX">
+                                <rect key="frame" x="108" y="76" width="104" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="im0-bn-9y2"/>
                     </view>
@@ -498,26 +507,33 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="264.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DbY-nE-r15">
-                                                    <rect key="frame" x="9" y="20" width="160" height="150"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" text="質問内容" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dKr-Py-TKI">
-                                                    <rect key="frame" x="9" y="176" width="296" height="78"/>
+                                                    <rect key="frame" x="9" y="178" width="296" height="78"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbx-15-Wil">
-                                                    <rect key="frame" x="202" y="70" width="100" height="100"/>
+                                                    <rect key="frame" x="222" y="100" width="70" height="70"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" image="trush"/>
                                                     <connections>
                                                         <action selector="deleteQuestion:" destination="nuB-IX-AHO" eventType="touchUpInside" id="4Tq-YB-hE9"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6b-l0-6rS">
+                                                    <rect key="frame" x="15" y="7" width="191" height="169"/>
+                                                    <state key="normal" title="Button" image="book"/>
+                                                    <connections>
+                                                        <action selector="tapQuestItem:" destination="nuB-IX-AHO" eventType="touchUpInside" id="Yml-EL-0cu"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="F6b-l0-6rS" firstAttribute="leading" secondItem="gDW-Lp-wzb" secondAttribute="leading" constant="15" id="dCh-vb-eRX"/>
+                                                <constraint firstItem="F6b-l0-6rS" firstAttribute="top" secondItem="gDW-Lp-wzb" secondAttribute="top" constant="7" id="vah-kl-VAR"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -574,6 +590,7 @@
                     </view>
                     <connections>
                         <outlet property="questTable" destination="gVv-Wx-d13" id="FII-pk-Jit"/>
+                        <segue destination="jiG-Lg-114" kind="show" identifier="showItemCamera" id="qLq-Y5-Z8v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIb-VE-UVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -660,6 +677,7 @@
     <resources>
         <image name="Langage.png" width="256" height="256"/>
         <image name="arrow.png" width="256" height="256"/>
+        <image name="book" width="256" height="256"/>
         <image name="go" width="256" height="256"/>
         <image name="preparation.png" width="256" height="256"/>
         <image name="setting.png" width="256" height="256"/>
@@ -669,6 +687,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xwx-Bo-P9W"/>
+        <segue reference="qLq-Y5-Z8v"/>
         <segue reference="kyg-io-Vmq"/>
         <segue reference="r2v-Up-gte"/>
     </inferredMetricsTieBreakers>
