@@ -8,21 +8,58 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let center = UNUserNotificationCenter.current()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //アプリのアラート通知を許可するかどうかを書くところ
+        application.registerUserNotificationSettings(UIUserNotificationSettings(types: [UIUserNotificationType.sound,UIUserNotificationType.alert,UIUserNotificationType.badge], categories: nil))
+        
+        //delegateを設定
+        center.delegate = self as? UNUserNotificationCenterDelegate
+        
         return true
     }
 
+    //アプリがバックグラウンドに移行した時に呼ばれる関数。
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        
+        //通知を送る日時の設定
+        var dateComponents = DateComponents()
+        
+        //TODO:設定した時間に通知できるようにしたい
+        //dateComponents.hour = setDepDate
+        dateComponents.hour = 10 //10時に通知が来るように設定
+        print(dateComponents)
+        
+        //trueで設定した時間がくるたびに通知。falseは１回のみ
+        let calenderTrigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats:true)
+        
+        //通知の内容について
+        let content = UNMutableNotificationContent()
+        //TODO：英語対応の条件分岐を後で用意
+        content.title = "" //通知タイトル
+        content.subtitle = "出発通知" //通知サブタイトル
+        content.body = "出発時間になりました。出発の準備をしましょう！" //通知内容詳細
+        
+        //画像について
+        if let path = Bundle.main.path(forResource:"Don't Forget",ofType:"png"){
+            content.attachments = [try! UNNotificationAttachment(identifier: "ID", url: URL(fileURLWithPath: path), options: nil)]
+        }
+        
+        let calenderRequest = UNNotificationRequest(identifier: "alert", content: content, trigger: calenderTrigger)
+        
+        center.add(calenderRequest, withCompletionHandler: nil)
+        
+        
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
