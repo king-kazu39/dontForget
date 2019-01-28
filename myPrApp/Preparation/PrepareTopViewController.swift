@@ -39,8 +39,7 @@ class PrepareTopViewController: UIViewController {
             //TODO:DBからデータを取得して表示するようにする
             labelPreUserType.text = userType
             PreDepTime.text = setDepDate
-//            imgUserType.image = selectedImage
-
+            imgUserType.image = UIImage(named: selectedImage!)
         } else if settingLang == "English" {
             textPreSent.text = PreTopEng["title"]
             textPreDepWord.text = PreTopEng["Deptime"]
@@ -56,7 +55,6 @@ class PrepareTopViewController: UIViewController {
         print(settingLang)
         print(UserTypeViewController().readUserType())
         print(DepDateTimeViewController().readDepData())
-        
         
     }
     

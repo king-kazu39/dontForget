@@ -40,7 +40,7 @@ class DepDateTimeViewController: UIViewController {
         setDepDate = strDate
         
         print(setDepDate)
-        print(Int((setDepDate)!))
+//        print(Int((setDepDate)!))
     }
     
     
