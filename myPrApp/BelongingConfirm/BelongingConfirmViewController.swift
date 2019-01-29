@@ -16,11 +16,17 @@ class BelongingConfirmViewController: UIViewController {
     @IBOutlet weak var frontCard: UIView!
     @IBOutlet weak var frontCardImageView: UIImageView!
     
+    
+    @IBOutlet weak var questionSentences: UITextView!
+    
     //画像の情報を入れるための配列を用意する
     var imageList:[String]!
     var cardNumber:Int = 0
     var nextCard:Int = 1
     var imageListCount:Int!
+    
+    //スワイプして質問を変えるための変数を初期化
+    var num = 0
     
     //スワイプ前のカードの中心座標を入れる変数
     var cardCenter:CGPoint!
@@ -40,6 +46,9 @@ class BelongingConfirmViewController: UIViewController {
         //frontカードの中心の位置情報を取得
         cardCenter = frontCard.center
         print(cardCenter)
+        
+        //質問内容表示
+        self.questionSentences.text = labelArray[num]
         
         //スクリーンにサイズ取得
         screenHeight = UIScreen.main.bounds.height
@@ -64,10 +73,12 @@ class BelongingConfirmViewController: UIViewController {
         //縦移動
         swipeCard.center = CGPoint(x: swipeCard.center.x, y: swipeCard.center.y + point.y * 0.1)
         
+
+        
         //スワイプの指が離れたときの処理.
         if sender.state == UIGestureRecognizer.State.ended{
             //処理を記入
-            //左に大きく振れた時
+            //下に大きく振れた時
             if swipeCard.center.y > self.screenHeight/5 {
                 UIView.animate(withDuration: 0, animations: {
                     //カードをスワイプした方向に飛ばす
@@ -85,6 +96,17 @@ class BelongingConfirmViewController: UIViewController {
                     
                     //frontカードを見えるようにする
                     swipeCard.alpha = 1
+                    
+                    self.num += 1
+                    self.questionSentences.text = labelArray[self.num]
+                    
+                    
+                    if self.questionSentences.text == labelArray[4] {
+                        
+                        // showGroomingCameraへいくためのSegue を呼び出す
+                        self.performSegue(withIdentifier: "showGroomingCamera",sender: nil)
+                        
+                    }
                     
                     //backカードに次の要素の情報を入れる（場合分けが必要）
                     //残りのカードが２枚になるまで
@@ -122,8 +144,6 @@ class BelongingConfirmViewController: UIViewController {
                 })
             }
         }
-        
-        
         
     }
     

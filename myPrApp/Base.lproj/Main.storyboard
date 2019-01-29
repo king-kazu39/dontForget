@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQa-3w-F9E">
-                                <rect key="frame" x="90" y="125" width="140" height="141"/>
+                                <rect key="frame" x="90" y="81" width="140" height="141"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sQa-3w-F9E" secondAttribute="height" multiplier="140:141" id="2KV-ao-dfG"/>
                                     <constraint firstAttribute="height" constant="141" id="uZj-7M-VOR"/>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENl-9E-bv7">
-                                <rect key="frame" x="91" y="382" width="141" height="97"/>
+                                <rect key="frame" x="91" y="338" width="141" height="141"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ENl-9E-bv7" secondAttribute="height" multiplier="1:1" id="ohx-XR-frQ"/>
                                 </constraints>
@@ -189,7 +189,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="質問内容です" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oge-22-u42">
-                                <rect key="frame" x="40" y="64" width="240" height="90"/>
+                                <rect key="frame" x="40" y="20" width="240" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="tP0-hu-VBC"/>
@@ -207,10 +207,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TX1-7m-7gO">
-                                <rect key="frame" x="105" y="163" width="110" height="110"/>
+                                <rect key="frame" x="105" y="164" width="110" height="110"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ya-gf-SqA">
-                                        <rect key="frame" x="0.0" y="5" width="110" height="110"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ya-gf-SqA">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                         <color key="backgroundColor" red="0.3699578536" green="0.44366146820000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="bg1-ml-FvG"/>
@@ -231,7 +231,7 @@
                                 <rect key="frame" x="105" y="164" width="110" height="110"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HZB-2l-XaX">
-                                        <rect key="frame" x="0.0" y="-1" width="110" height="115"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="115"/>
                                         <color key="backgroundColor" red="1" green="0.27351524389999998" blue="0.22325564480000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -270,6 +270,8 @@
                         <outlet property="backCardImageView" destination="2Ya-gf-SqA" id="h4n-aa-b5u"/>
                         <outlet property="frontCard" destination="KUP-6L-m4S" id="asx-oM-Aav"/>
                         <outlet property="frontCardImageView" destination="HZB-2l-XaX" id="PaK-FY-bpN"/>
+                        <outlet property="questionSentences" destination="Oge-22-u42" id="JDo-8e-6tM"/>
+                        <segue destination="jiG-Lg-114" kind="show" identifier="showGroomingCamera" id="L07-Xd-fYo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iG7-PR-Ok6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -279,7 +281,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2752.5" y="-773.23943661971828"/>
+            <point key="canvasLocation" x="3281" y="-884"/>
         </scene>
         <!--Lang View Controller-->
         <scene sceneID="FMZ-5K-EKZ">
@@ -290,14 +292,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Langage.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Jz-02-x9m">
-                                <rect key="frame" x="50" y="244" width="220" height="120"/>
+                                <rect key="frame" x="50" y="200" width="220" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="lz6-XU-KIY"/>
                                     <constraint firstAttribute="height" constant="120" id="mXT-iJ-SbW"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLI-xX-RUM" customClass="Button_Custom" customModule="myPrApp" customModuleProvider="target">
-                                <rect key="frame" x="90" y="404" width="140" height="70"/>
+                                <rect key="frame" x="90" y="360" width="140" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="5NL-gR-bsk"/>
                                     <constraint firstAttribute="width" constant="140" id="j4q-Mu-NCd"/>
@@ -320,7 +322,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1H-6b-T2a" customClass="Button_Custom" customModule="myPrApp" customModuleProvider="target">
-                                <rect key="frame" x="90" y="504" width="140" height="70"/>
+                                <rect key="frame" x="90" y="460" width="140" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="fjD-R8-aeW"/>
                                     <constraint firstAttribute="width" constant="140" id="zkM-KP-CHD"/>
@@ -343,7 +345,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="使用する言語を 設定してください。" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y8R-0u-mVa">
-                                <rect key="frame" x="15" y="124" width="290" height="90"/>
+                                <rect key="frame" x="15" y="80" width="290" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="CB2-lB-93q"/>
@@ -385,7 +387,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y7G-gR-GfE">
-                                <rect key="frame" x="0.0" y="237" width="320" height="333"/>
+                                <rect key="frame" x="0.0" y="193" width="320" height="377"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="IVv-ii-2wk">
                                     <size key="itemSize" width="150" height="150"/>
@@ -431,7 +433,7 @@
                                 </connections>
                             </collectionView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="あなたはどのタイプに属しますか？" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5cJ-sR-aPT">
-                                <rect key="frame" x="18" y="124" width="284" height="83"/>
+                                <rect key="frame" x="18" y="80" width="284" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="gXK-fv-Tu3"/>
@@ -558,7 +560,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gVv-Wx-d13">
-                                <rect key="frame" x="0.0" y="184" width="320" height="350"/>
+                                <rect key="frame" x="0.0" y="140" width="320" height="350"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="72C-ZS-D0v"/>
@@ -608,7 +610,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uh-AW-iy4" customClass="Button_Custom" customModule="myPrApp" customModuleProvider="target">
-                                <rect key="frame" x="125" y="554" width="70" height="40"/>
+                                <rect key="frame" x="125" y="510" width="70" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3Kt-ry-zED"/>
                                     <constraint firstAttribute="width" constant="70" id="3wh-e1-Sph"/>
@@ -631,7 +633,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="確認項目はこれでいいですか？" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lWx-Qv-vFQ">
-                                <rect key="frame" x="30" y="89" width="260" height="93"/>
+                                <rect key="frame" x="30" y="45" width="260" height="93"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="93" id="6P5-UF-Mhy"/>
@@ -718,7 +720,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hwa-L6-Bja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4410" y="24.295774647887324"/>
+            <point key="canvasLocation" x="4836" y="-30"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bf7-7u-hmv">
@@ -751,8 +753,8 @@
         <image name="usertype" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qLq-Y5-Z8v"/>
+        <segue reference="L07-Xd-fYo"/>
         <segue reference="kyg-io-Vmq"/>
-        <segue reference="YT7-CQ-YAC"/>
+        <segue reference="r2v-Up-gte"/>
     </inferredMetricsTieBreakers>
 </document>
