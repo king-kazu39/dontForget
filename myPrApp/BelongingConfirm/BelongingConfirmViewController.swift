@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Lottie
 
 class BelongingConfirmViewController: UIViewController {
+    
+    //
+    let animationView = LOTAnimationView()
     
     @IBOutlet weak var backCard: UIView!
     @IBOutlet weak var backCardImageView: UIImageView!
@@ -97,6 +101,8 @@ class BelongingConfirmViewController: UIViewController {
                     //frontカードを見えるようにする
                     swipeCard.alpha = 1
                     
+                    self.animation()
+                    
                     self.num += 1
                     self.questionSentences.text = labelArray[self.num]
                     
@@ -147,6 +153,26 @@ class BelongingConfirmViewController: UIViewController {
         
     }
     
+    
+    func animation() {
+        animationView.frame.size.width = 300//アニメーションを表示するViewの幅
+        animationView.frame.size.height = 300//アニメーションを表示するViewの高さ
+        animationView.center = self.view.center//Viewのs中心に配置
+        animationView.setAnimation(named: "3101-first-checked")
+        animationView.animationSpeed = 1//アニメーションのスピード
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopAnimation = false//アニメーションを繰り返し行う
+        self.view.addSubview(animationView)
+        
+        print("アニメーション開始")
+        
+        animationView.play { finished in
+            if finished {
+                self.animationView.removeFromSuperview()
+            }
+        }
+        
+    }
     
     
 
