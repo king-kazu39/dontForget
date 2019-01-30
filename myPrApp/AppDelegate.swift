@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //delegateを設定
         center.delegate = self as? UNUserNotificationCenterDelegate
         
+        sleep(2) //launchimageの表示時間を２秒に変更
         return true
     }
 
@@ -51,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         content.body = "出発時間になりました。出発の準備をしましょう！" //通知内容詳細
         
         //画像について
-        if let path = Bundle.main.path(forResource:"Don't Forget",ofType:"png"){
+        if let path = Bundle.main.path(forResource:"Don't Forget!",ofType:"png"){
             content.attachments = [try! UNNotificationAttachment(identifier: "ID", url: URL(fileURLWithPath: path), options: nil)]
         }
         
