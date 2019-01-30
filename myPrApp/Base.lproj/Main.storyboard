@@ -715,7 +715,7 @@
                     </view>
                     <connections>
                         <outlet property="depTime" destination="Xw2-wY-92h" id="aLH-m0-aRK"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="showTop" id="r2v-Up-gte"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showTop" id="r2v-Up-gte"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hwa-L6-Bja" userLabel="First Responder" sceneMemberID="firstResponder"/>
