@@ -101,16 +101,18 @@ class BelongingConfirmViewController: UIViewController {
                     //frontカードを見えるようにする
                     swipeCard.alpha = 1
                     
-                    self.animation()
+                    if self.num < 4 {
+                        self.animation()
+                    }
                     
                     self.num += 1
                     self.questionSentences.text = labelArray[self.num]
                     
-                    
-                    if self.questionSentences.text == labelArray[4] {
+                    if self.questionSentences.text == labelArray[5] {
                         
+                        self.alert()
                         // showGroomingCameraへいくためのSegue を呼び出す
-                        self.performSegue(withIdentifier: "showGroomingCamera",sender: nil)
+                        
                         
                     }
                     
@@ -171,6 +173,26 @@ class BelongingConfirmViewController: UIViewController {
                 self.animationView.removeFromSuperview()
             }
         }
+        
+    }
+    
+    //アラートを呼び出す関数
+    func alert () {
+        //アラートオブジェクトを作る
+        let alert = UIAlertController(title: "身だしなみを整えたら", message: "撮影してください", preferredStyle: .alert)
+        
+        //OKが押されたときにmyMessageの中に書いた処理を実行するように設定している
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in self.moveCamera()}))
+        
+        //アラート画面を表示する
+        present(alert,animated: true)
+    }
+    
+    func moveCamera(){
+        print("カメラ画面に遷移します")
+        
+        self.performSegue(withIdentifier: "showGroomingCamera",sender: nil)
+        
         
     }
     
