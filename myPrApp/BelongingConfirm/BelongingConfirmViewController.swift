@@ -9,7 +9,9 @@
 import UIKit
 import Lottie
 
-class BelongingConfirmViewController: UIViewController {
+var cameraImage:UIImage?
+
+class BelongingConfirmViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     //
     let animationView = LOTAnimationView()
@@ -113,7 +115,6 @@ class BelongingConfirmViewController: UIViewController {
                         self.alert()
                         // showGroomingCameraへいくためのSegue を呼び出す
                         
-                        
                     }
                     
                     //backカードに次の要素の情報を入れる（場合分けが必要）
@@ -191,8 +192,50 @@ class BelongingConfirmViewController: UIViewController {
     func moveCamera(){
         print("カメラ画面に遷移します")
         
-        self.performSegue(withIdentifier: "showGroomingCamera",sender: nil)
+        //撮影用の画面を起動する
         
+        
+        //カメラ機能があるデバイスかどうか確認する
+        //カメラかどうか判定するための値を代入
+        //SourceTypeという列挙体の中のカメラタイプを指定している
+        let camera = UIImagePickerController.SourceType.camera
+        
+        //型メソッドを使用して、カメラタイプか判別
+        //型メソッドとは、、インスタンス化することなしに機能を持っているメソッドのこと
+        if UIImagePickerController.isSourceTypeAvailable(camera){
+            //カメラ使える
+            //カメラで撮影できる画面を表示する
+            
+            //撮影用画面オブジェクトを作成（インスタンス化）
+            let picker = UIImagePickerController()
+            
+            picker.sourceType = camera
+            picker.delegate = self //イベントの指示をする人は自分（この画面）
+            //カメラで撮影できる画面を表示する
+            present(picker,animated: true) //表示
+            
+        }
+        
+        
+    }
+    
+    //撮影ボタンが押されたら発動するメソッド
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        //撮影された写真を取得（UIImage型で取得）
+        //as ：ダウンキャスト変換　具体的にデータ型を決定する変換方法
+        //info 撮影時の情報を送ってきてくれる変数 UIImageだったり、ディクショナリー型（Exit）だったりが送られてくる
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        
+        //次画面で撮影した画像を表示するためにグローバル変数に一時的に保存
+        cameraImage = image
+        
+        //アルバムに保存(カメラロール)
+        //        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        
+        //撮影用の画面を閉じる
+        //completionにsegueで画面遷移する処理を入れた
+        dismiss(animated: true, completion:{self.performSegue(withIdentifier: "showGroomingCamera", sender: nil)})
         
     }
     

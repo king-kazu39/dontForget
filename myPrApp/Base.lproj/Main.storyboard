@@ -271,7 +271,7 @@
                         <outlet property="frontCard" destination="KUP-6L-m4S" id="asx-oM-Aav"/>
                         <outlet property="frontCardImageView" destination="HZB-2l-XaX" id="PaK-FY-bpN"/>
                         <outlet property="questionSentences" destination="Oge-22-u42" id="JDo-8e-6tM"/>
-                        <segue destination="jiG-Lg-114" kind="show" identifier="showGroomingCamera" id="L07-Xd-fYo"/>
+                        <segue destination="Sqj-lT-iiT" kind="presentation" identifier="showGroomingCamera" id="4d4-uM-42j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iG7-PR-Ok6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -282,6 +282,36 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3281" y="-884"/>
+        </scene>
+        <!--Grooming Camera View Controller-->
+        <scene sceneID="c2t-vl-GZs">
+            <objects>
+                <viewController id="Sqj-lT-iiT" customClass="GroomingCameraViewController" customModule="myPrApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RAj-ua-ERc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IaT-78-keM">
+                                <rect key="frame" x="16" y="44" width="288" height="456"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwM-9x-qng">
+                                <rect key="frame" x="133" y="522" width="69" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="準備OK"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uqe-9h-EGc"/>
+                    </view>
+                    <connections>
+                        <outlet property="groomingPicture" destination="IaT-78-keM" id="1Aq-P9-TjL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BT9-oo-5CU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4256.25" y="-884.15492957746483"/>
         </scene>
         <!--Lang View Controller-->
         <scene sceneID="FMZ-5K-EKZ">
@@ -753,7 +783,7 @@
         <image name="usertype" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="L07-Xd-fYo"/>
+        <segue reference="qLq-Y5-Z8v"/>
         <segue reference="kyg-io-Vmq"/>
         <segue reference="r2v-Up-gte"/>
     </inferredMetricsTieBreakers>

@@ -20,6 +20,7 @@
 		E55BFF2821EDC64400CF1CFC /* BelongingConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BFF2721EDC64400CF1CFC /* BelongingConfirmViewController.swift */; };
 		E55BFF4D21EF131800CF1CFC /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BFF4C21EF131800CF1CFC /* cameraViewController.swift */; };
 		E5D247602201DE6B009D7022 /* Don't Forget!.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D2475F2201DE6B009D7022 /* Don't Forget!.png */; };
+		E5D24797220369F9009D7022 /* GroomingCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D24796220369F9009D7022 /* GroomingCameraViewController.swift */; };
 		E5EA43A021D8D0E00053FAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */; };
 		E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA43A121D8D0E00053FAEC /* ViewController.swift */; };
 		E5EA43A521D8D0E00053FAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EA43A321D8D0E00053FAEC /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		E55BFF2721EDC64400CF1CFC /* BelongingConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelongingConfirmViewController.swift; sourceTree = "<group>"; };
 		E55BFF4C21EF131800CF1CFC /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
 		E5D2475F2201DE6B009D7022 /* Don't Forget!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Don't Forget!.png"; path = "../../../Don't Forget!.png"; sourceTree = "<group>"; };
+		E5D24796220369F9009D7022 /* GroomingCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroomingCameraViewController.swift; sourceTree = "<group>"; };
 		E5EA439C21D8D0E00053FAEC /* myPrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5EA43A121D8D0E00053FAEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				E55BFF4F21EF135800CF1CFC /* BelongingConfirm */,
 				E55BFF5121EF13C200CF1CFC /* DepDate */,
 				E5EA43BA21D9CBD80053FAEC /* Langage.png */,
+				E5D24796220369F9009D7022 /* GroomingCameraViewController.swift */,
 				E5EA43B421D8D1520053FAEC /* preparation.png */,
 				E5EA43B621D8D1890053FAEC /* setting.png */,
 				E548BA1221F9E6D5006CEDAC /* arrow.png */,
@@ -346,6 +349,7 @@
 				E524E39121DF3D8D009AF942 /* PrepareTopViewController.swift in Sources */,
 				E55BFF4D21EF131800CF1CFC /* cameraViewController.swift in Sources */,
 				E5EA43A021D8D0E00053FAEC /* AppDelegate.swift in Sources */,
+				E5D24797220369F9009D7022 /* GroomingCameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
