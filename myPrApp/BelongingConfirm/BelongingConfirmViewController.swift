@@ -11,6 +11,7 @@ import Lottie
 
 var cameraImage:UIImage?
 
+
 class BelongingConfirmViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     //

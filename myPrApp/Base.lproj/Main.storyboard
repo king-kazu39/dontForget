@@ -306,7 +306,7 @@
                         <viewLayoutGuide key="safeArea" id="uqe-9h-EGc"/>
                     </view>
                     <connections>
-                        <outlet property="groomingPicture" destination="IaT-78-keM" id="1Aq-P9-TjL"/>
+                        <outlet property="groomingPicture" destination="IaT-78-keM" id="lTt-du-s6n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BT9-oo-5CU" userLabel="First Responder" sceneMemberID="firstResponder"/>
