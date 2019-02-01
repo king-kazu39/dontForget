@@ -79,7 +79,12 @@ class BelongingConfirmViewController: UIViewController,UIImagePickerControllerDe
         
         //カードをスワイプした分動かす処理
         //縦移動
-        swipeCard.center = CGPoint(x: swipeCard.center.x, y: swipeCard.center.y + point.y * 0.1)
+        
+        if point.y >= 0 {
+            swipeCard.center = CGPoint(x: swipeCard.center.x, y: swipeCard.center.y + point.y * 0.1)
+        } else {
+            swipeCard.center = CGPoint(x: swipeCard.center.x, y: swipeCard.center.y)
+        }
         
 
         
@@ -87,7 +92,7 @@ class BelongingConfirmViewController: UIViewController,UIImagePickerControllerDe
         if sender.state == UIGestureRecognizer.State.ended{
             //処理を記入
             //下に大きく振れた時
-            if swipeCard.center.y > self.screenHeight/5 {
+            if swipeCard.center.y > self.screenHeight/3 {
                 UIView.animate(withDuration: 0, animations: {
                     //カードをスワイプした方向に飛ばす
                     swipeCard.center = CGPoint(x: self.cardCenter.y - self.screenHeight, y: self.cardCenter.y)
