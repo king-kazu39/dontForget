@@ -21,6 +21,8 @@
 		E55BFF4D21EF131800CF1CFC /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55BFF4C21EF131800CF1CFC /* cameraViewController.swift */; };
 		E5D247602201DE6B009D7022 /* Don't Forget!.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D2475F2201DE6B009D7022 /* Don't Forget!.png */; };
 		E5D24797220369F9009D7022 /* GroomingCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D24796220369F9009D7022 /* GroomingCameraViewController.swift */; };
+		E5D2479B22041250009D7022 /* FinishPreparingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D2479A22041250009D7022 /* FinishPreparingViewController.swift */; };
+		E5D2479D220413CB009D7022 /* 3091-process-complete.json in Resources */ = {isa = PBXBuildFile; fileRef = E5D2479C220413CB009D7022 /* 3091-process-complete.json */; };
 		E5EA43A021D8D0E00053FAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */; };
 		E5EA43A221D8D0E00053FAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EA43A121D8D0E00053FAEC /* ViewController.swift */; };
 		E5EA43A521D8D0E00053FAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EA43A321D8D0E00053FAEC /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 		E55BFF4C21EF131800CF1CFC /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
 		E5D2475F2201DE6B009D7022 /* Don't Forget!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Don't Forget!.png"; path = "../../../Don't Forget!.png"; sourceTree = "<group>"; };
 		E5D24796220369F9009D7022 /* GroomingCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroomingCameraViewController.swift; sourceTree = "<group>"; };
+		E5D2479A22041250009D7022 /* FinishPreparingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FinishPreparingViewController.swift; path = myPrApp/FinishPreparingViewController.swift; sourceTree = "<group>"; };
+		E5D2479C220413CB009D7022 /* 3091-process-complete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "3091-process-complete.json"; sourceTree = "<group>"; };
 		E5EA439C21D8D0E00053FAEC /* myPrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EA439F21D8D0E00053FAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5EA43A121D8D0E00053FAEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 		E5EA439321D8D0E00053FAEC = {
 			isa = PBXGroup;
 			children = (
+				E5D2479A22041250009D7022 /* FinishPreparingViewController.swift */,
 				E5EA439E21D8D0E00053FAEC /* myPrApp */,
 				E5EA439D21D8D0E00053FAEC /* Products */,
 				33158171E1DB197C96932DB3 /* Pods */,
@@ -199,6 +204,7 @@
 				E548BA1221F9E6D5006CEDAC /* arrow.png */,
 				E548BA1421FAD986006CEDAC /* simplebag.png */,
 				E5D2475F2201DE6B009D7022 /* Don't Forget!.png */,
+				E5D2479C220413CB009D7022 /* 3091-process-complete.json */,
 				E550C35322003EB200861D55 /* 3101-first-checked.json */,
 				E5EA43A321D8D0E00053FAEC /* Main.storyboard */,
 				E5EA43A921D8D0E10053FAEC /* Assets.xcassets */,
@@ -276,6 +282,7 @@
 				E5D247602201DE6B009D7022 /* Don't Forget!.png in Resources */,
 				E550C35422003EB300861D55 /* 3101-first-checked.json in Resources */,
 				E5EA43AA21D8D0E10053FAEC /* Assets.xcassets in Resources */,
+				E5D2479D220413CB009D7022 /* 3091-process-complete.json in Resources */,
 				E5EA43A521D8D0E00053FAEC /* Main.storyboard in Resources */,
 				E5EA43BB21D9CBD80053FAEC /* Langage.png in Resources */,
 				E5EA43B721D8D1890053FAEC /* setting.png in Resources */,
@@ -338,6 +345,7 @@
 			files = (
 				E5EA43B921D9130E0053FAEC /* LangViewController.swift in Sources */,
 				E5EA43A821D8D0E00053FAEC /* myPrApp.xcdatamodeld in Sources */,
+				E5D2479B22041250009D7022 /* FinishPreparingViewController.swift in Sources */,
 				E505D81F21E332C800F1866E /* QuestionViewController.swift in Sources */,
 				E505D82621E5BE5C00F1866E /* subQuestionViewController.swift in Sources */,
 				E55BFF2121EC63ED00CF1CFC /* SetUserViewController.swift in Sources */,

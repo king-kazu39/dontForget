@@ -75,6 +75,7 @@ class BelongingConfirmViewController: UIViewController,UIImagePickerControllerDe
         //どれくらいスワイプされたかを変数に入れる
         let point = sender.translation(in: view)
         
+        print("pointの中身：\(point)")
         
         //カードをスワイプした分動かす処理
         //縦移動

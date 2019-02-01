@@ -70,5 +70,10 @@ class GroomingCameraViewController: UIViewController {
     }
     
     
+    @IBAction func tapMoveLast(_ sender: Any) {
+        self.performSegue(withIdentifier: "showLastPage", sender: nil)
+    }
+    
+    
     
 }
