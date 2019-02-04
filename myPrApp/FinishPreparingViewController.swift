@@ -11,6 +11,10 @@ import Lottie
 
 class FinishPreparingViewController: UIViewController {
 
+    
+    @IBOutlet weak var finishImage: UIImageView!
+    @IBOutlet weak var finishLabel: UILabel!
+    
     //animationViewをインスタンス化？
     //メンバ変数に置かないとエラー出る
     let animationView = LOTAnimationView()
@@ -45,5 +49,13 @@ class FinishPreparingViewController: UIViewController {
         
     }
 
+    
+    @IBAction func tapFinish(_ sender: Any) {
+        
+        finishImage.image = UIImage(named: "cellphone")
+        finishLabel.text = "携帯忘れないでね！"
+        
+    }
+    
     
 }
