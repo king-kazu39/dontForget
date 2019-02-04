@@ -11,7 +11,7 @@ import CoreData
 import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(UIUserNotificationSettings(types: [UIUserNotificationType.sound,UIUserNotificationType.alert,UIUserNotificationType.badge], categories: nil))
         
         //delegateを設定
-        center.delegate = self as? UNUserNotificationCenterDelegate
+        center.delegate = self
         
         sleep(2) //launchimageの表示時間を２秒に変更
         return true
@@ -33,13 +33,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //アプリがバックグラウンドに移行した時に呼ばれる関数。
     func applicationWillResignActive(_ application: UIApplication) {
         
+
+    }
+    
+    //通知の設定をするために用意した関数
+    func setNotification(at date: Date) {
+        // TODO: 通知する処理書く
+        // contentとかtriggerとかrequestとか
+        
         //通知を送る日時の設定
         var dateComponents = DateComponents()
         
-        //TODO:設定した時間に通知できるようにしたい
-        //dateComponents.hour = setDepDate
-        dateComponents.hour = 10 //10時に通知が来るように設定
-        print(dateComponents)
+        //DatePickerで設定した時間に通知できるようにした
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH"
+        
+        dateComponents.hour = Int(formatter.string(from: date))
+        formatter.dateFormat = "mm"
+        dateComponents.minute = Int(formatter.string(from: date))
+        
+        print("dateComponentsの中身：\(dateComponents)")
         
         //trueで設定した時間がくるたびに通知。falseは１回のみ
         let calenderTrigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats:true)
@@ -59,7 +72,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let calenderRequest = UNNotificationRequest(identifier: "alert", content: content, trigger: calenderTrigger)
         
         center.add(calenderRequest, withCompletionHandler: nil)
-        
         
     }
 

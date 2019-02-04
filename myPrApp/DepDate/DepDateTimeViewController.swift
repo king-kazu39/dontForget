@@ -39,8 +39,9 @@ class DepDateTimeViewController: UIViewController {
         
         setDepDate = strDate
         
-        print(setDepDate)
-//        print(Int((setDepDate)!))
+        print("setDepDateの中身：\(setDepDate)")
+        print("datePickerで設定した値：\(sender.date)")
+
     }
     
     
@@ -76,6 +77,7 @@ class DepDateTimeViewController: UIViewController {
         //アラート画面を表示する
         present(alert,animated: true)
         
+        
     }
     
     func myMoveTop(){
@@ -96,6 +98,10 @@ class DepDateTimeViewController: UIViewController {
         // データの同期
         userDefaults.synchronize()
         
+        // AppDelegate使えるようにする
+        let delegate = UIApplication.shared.delegate as? AppDelegate
+        // TODO: AppDelegateに追加したsetNotificationを呼び出す
+        delegate?.setNotification(at: depTime.date)
     }
     
     func readDepData() -> String {
