@@ -8,6 +8,8 @@
 
 import UIKit
 
+var set:Int?
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,6 +17,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    
+    @IBAction func tapPrep(_ sender: Any) {
+        set = 0
+    }
+    
 
+    @IBAction func tapSet(_ sender: Any) {
+        set = 1
+    }
+    
 }
 

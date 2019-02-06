@@ -32,7 +32,18 @@ class PrepareTopViewController: UIViewController {
         
         settingLang = LangViewController().readLang()
         
-        if settingLang == "Japanese"{
+        //デフォルトの設定
+        if set == 0 {
+            textPreSent.text = PreTopEng["title"]
+            textPreDepWord.text = PreTopEng["Deptime"]
+            
+            //TODO:DBからデータを取得して表示するようにする
+            labelPreUserType.text = "single man"
+            PreDepTime.text = "No setting"
+            imgUserType.image = UIImage(named: "singleman")
+            
+        //言語設定をJapaneseに設定している時
+        } else if set == 1 && settingLang == "Japanese"{
             textPreSent.text = PreTopJpn["title"]
             textPreDepWord.text = PreTopJpn["Deptime"]
             
@@ -40,17 +51,17 @@ class PrepareTopViewController: UIViewController {
             labelPreUserType.text = userType
             PreDepTime.text = setDepDate
             imgUserType.image = UIImage(named: selectedImage!)
-        } else if settingLang == "English" {
+            
+        //言語設定をEnglishに設定している時
+        } else if set == 1 && settingLang == "English" {
             textPreSent.text = PreTopEng["title"]
             textPreDepWord.text = PreTopEng["Deptime"]
             
             //TODO:DBからデータを取得して表示するようにする
             labelPreUserType.text = userType
             PreDepTime.text = setDepDate
+            imgUserType.image = UIImage(named: selectedImage!)
         }
-        
-        
-        
         
         print(settingLang)
         print(UserTypeViewController().readUserType())

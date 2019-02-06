@@ -47,15 +47,34 @@ class BelongingConfirmViewController: UIViewController,UIImagePickerControllerDe
 
         // Do any additional setup after loading the view.
         
-        imageList = questImg as! [String]
-        imageListCount = questImg.count
+        //デフォルトの設定
+        if set == 0 {
+            let defaultQstImg = [
+                "key","pc",
+                "wallet","doc",
+                "camera","plus"]
+            imageList = defaultQstImg
+            imageListCount = defaultQstImg.count
+        //ちゃんと設定をした時の
+        } else {
+            imageList = questImg as! [String]
+            imageListCount = questImg.count
+        }
         
         //frontカードの中心の位置情報を取得
         cardCenter = frontCard.center
         print(cardCenter)
         
         //質問内容表示
-        self.questionSentences.text = labelArray[num]
+        if set == 0 {
+            labelArray = [
+                "Do you have your key？","Do you have your PC？",
+                "Do you have your wallet？","Do you have your document?",
+                "When you are well-groomed,Take a picture.","add a question"]
+            self.questionSentences.text = labelArray[num]
+        } else {
+            self.questionSentences.text = labelArray[num]
+        }
         
         //スクリーンにサイズ取得
         screenHeight = UIScreen.main.bounds.height
