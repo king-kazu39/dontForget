@@ -68,9 +68,9 @@ class BelongingConfirmViewController: UIViewController,UIImagePickerControllerDe
         //質問内容表示
         if set == 0 {
             labelArray = [
-                "Do you have your key？","Do you have your PC？",
-                "Do you have your wallet？","Do you have your document?",
-                "When you are well-groomed,Take a picture.","add a question"]
+                "鍵持った？","PC持った？",
+                "財布持った？","会議で使う資料持った？",
+                "身だしなみを整えよう"]
             self.questionSentences.text = labelArray[num]
         } else {
             self.questionSentences.text = labelArray[num]
@@ -136,7 +136,7 @@ class BelongingConfirmViewController: UIViewController,UIImagePickerControllerDe
                     self.num += 1
                     self.questionSentences.text = labelArray[self.num]
                     
-                    if self.questionSentences.text == labelArray[5] {
+                    if self.questionSentences.text == labelArray.last {
                         
                         self.alert()
                         // showGroomingCameraへいくためのSegue を呼び出す

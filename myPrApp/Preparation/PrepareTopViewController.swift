@@ -34,11 +34,11 @@ class PrepareTopViewController: UIViewController {
         
         //デフォルトの設定
         if set == 0 {
-            textPreSent.text = PreTopEng["title"]
-            textPreDepWord.text = PreTopEng["Deptime"]
+            textPreSent.text = PreTopJpn["title"]
+            textPreDepWord.text = PreTopJpn["Deptime"]
             
             //TODO:DBからデータを取得して表示するようにする
-            labelPreUserType.text = "single man"
+            labelPreUserType.text = "独身男性"
             PreDepTime.text = "No setting"
             imgUserType.image = UIImage(named: "singleman")
             
