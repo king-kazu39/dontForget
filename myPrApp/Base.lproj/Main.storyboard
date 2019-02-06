@@ -214,7 +214,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="質問内容です" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oge-22-u42">
-                                <rect key="frame" x="8" y="33" width="304" height="121"/>
+                                <rect key="frame" x="8" y="40" width="304" height="121"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="121" id="HhN-lq-U7V"/>
@@ -275,12 +275,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xn3-9Y-hit" firstAttribute="trailing" secondItem="AaZ-XN-1mm" secondAttribute="trailing" id="40E-1S-CQH"/>
-                            <constraint firstItem="TX1-7m-7gO" firstAttribute="top" secondItem="Oge-22-u42" secondAttribute="bottom" constant="10" id="6GV-xp-jz5"/>
+                            <constraint firstItem="TX1-7m-7gO" firstAttribute="top" secondItem="Oge-22-u42" secondAttribute="bottom" constant="3" id="6GV-xp-jz5"/>
                             <constraint firstItem="TX1-7m-7gO" firstAttribute="top" secondItem="KUP-6L-m4S" secondAttribute="top" id="6QJ-Uc-FON"/>
                             <constraint firstItem="Oge-22-u42" firstAttribute="leading" secondItem="PbL-8J-oTl" secondAttribute="leading" constant="8" id="7rM-L5-pA7"/>
                             <constraint firstItem="Oge-22-u42" firstAttribute="centerX" secondItem="3pd-GJ-SgI" secondAttribute="centerX" id="CXA-DZ-18m"/>
                             <constraint firstItem="Oge-22-u42" firstAttribute="centerX" secondItem="KUP-6L-m4S" secondAttribute="centerX" id="Gvf-6J-Xle"/>
-                            <constraint firstItem="Oge-22-u42" firstAttribute="top" secondItem="PbL-8J-oTl" secondAttribute="top" constant="13" id="Lor-QA-CUf"/>
+                            <constraint firstItem="Oge-22-u42" firstAttribute="top" secondItem="PbL-8J-oTl" secondAttribute="top" constant="20" id="Lor-QA-CUf"/>
                             <constraint firstItem="KUP-6L-m4S" firstAttribute="bottom" secondItem="TX1-7m-7gO" secondAttribute="bottom" id="Qzb-by-I58"/>
                             <constraint firstItem="xn3-9Y-hit" firstAttribute="top" secondItem="KUP-6L-m4S" secondAttribute="bottom" constant="40" id="Wrl-dn-daQ"/>
                             <constraint firstItem="KUP-6L-m4S" firstAttribute="leading" secondItem="TX1-7m-7gO" secondAttribute="leading" id="bDl-Wo-ysU"/>
@@ -374,7 +374,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9n-JF-wCb" customClass="Button_Custom" customModule="myPrApp" customModuleProvider="target">
                                 <rect key="frame" x="75" y="516" width="170" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="行ってきます！"/>
+                                <state key="normal" title="Thanks!"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
@@ -391,14 +391,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A1Y-f9-Mmx">
-                                <rect key="frame" x="16" y="438" width="60" height="60"/>
+                                <rect key="frame" x="16" y="418" width="60" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="A0j-ov-b5c"/>
+                                    <constraint firstAttribute="height" constant="80" id="A0j-ov-b5c"/>
                                     <constraint firstAttribute="width" constant="60" id="vS5-ZN-m6H"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJT-vx-JIo">
-                                <rect key="frame" x="84" y="438" width="220" height="60"/>
+                                <rect key="frame" x="84" y="418" width="220" height="80"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -424,6 +424,7 @@
                     <connections>
                         <outlet property="finishImage" destination="A1Y-f9-Mmx" id="wSn-zH-bp0"/>
                         <outlet property="finishLabel" destination="sJT-vx-JIo" id="5nu-iY-Kuq"/>
+                        <outlet property="sentenceLabel" destination="ewV-Cc-eRE" id="2dg-tB-R1n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QCz-Sj-dLD" userLabel="First Responder" sceneMemberID="firstResponder"/>

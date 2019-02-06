@@ -13,11 +13,7 @@ var setDepDate:String?
 class DepDateTimeViewController: UIViewController {
 
     @IBOutlet weak var depTime: UIDatePicker!
-    
     @IBOutlet weak var sentenceLabel: UITextView!
-    
-    let jpnSentence = "出発時間を設定しましょう！"
-    let engSentence = "Let's set the departure time!"
     
     
     override func viewDidLoad() {
@@ -30,10 +26,10 @@ class DepDateTimeViewController: UIViewController {
         
         //Japaneseに設定していたら日本文にする
         if settingLang == "Japanese" {
-            sentenceLabel.text = jpnSentence
+            sentenceLabel.text = "出発時間を設定しましょう！"
             //Englishに設定していたら英文にする
         } else if settingLang == "English" {
-            sentenceLabel.text = engSentence
+            sentenceLabel.text = "Let's set the departure time!"
         }
         
         

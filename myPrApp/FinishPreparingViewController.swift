@@ -15,6 +15,8 @@ class FinishPreparingViewController: UIViewController {
     @IBOutlet weak var finishImage: UIImageView!
     @IBOutlet weak var finishLabel: UILabel!
     
+    @IBOutlet weak var sentenceLabel: UILabel!
+    
     //animationViewをインスタンス化？
     //メンバ変数に置かないとエラー出る
     let animationView = LOTAnimationView()
@@ -25,6 +27,17 @@ class FinishPreparingViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         lastAnimation()
+        
+        //Japaneseに設定していたら日本文にする
+        if settingLang == "Japanese" {
+            sentenceLabel.text = "行ってらっしゃい！！"
+            //Englishに設定していたら英文にする
+        } else if settingLang == "English" {
+            sentenceLabel.text = "Good luck!!"
+        }
+
+        
+        
         
     }
     
@@ -53,7 +66,17 @@ class FinishPreparingViewController: UIViewController {
     @IBAction func tapFinish(_ sender: Any) {
         
         finishImage.image = UIImage(named: "cellphone")
-        finishLabel.text = "携帯忘れないでね！"
+        
+        
+        //Japaneseに設定していたら日本文にする
+        if settingLang == "Japanese" {
+            finishLabel.text = "携帯忘れないでね！"
+            //Englishに設定していたら英文にする
+        } else if settingLang == "English" {
+            finishLabel.text = "Don't forget your phone!"
+        }
+        
+        
         
     }
     
