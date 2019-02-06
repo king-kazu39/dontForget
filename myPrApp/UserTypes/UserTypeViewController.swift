@@ -19,6 +19,10 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
     //メンバ変数用意
 //    var selectedImage: String?
     
+    @IBOutlet weak var sentenceLabel: UITextView!
+    let jpnSentence = "あなたはどのタイプに属しますか？"
+    let engSentence = "Which type do you belong to?"
+    
     let userImages = [
         "singleman","singlewoman","married","pet","student",
         "child","usertype"]
@@ -49,9 +53,11 @@ class UserTypeViewController: UIViewController,UICollectionViewDataSource,UIColl
         //Japaneseに設定していたらUserTypesに日本語対応の配列を入れる
         if settingLang == "Japanese" {
             userTypes = userJpns
+            sentenceLabel.text = jpnSentence
         //Englishに設定していたらUserTypesに日本語対応の配列を入れる
         } else if settingLang == "English" {
             userTypes = userEngs
+            sentenceLabel.text = engSentence
         }
 
     }

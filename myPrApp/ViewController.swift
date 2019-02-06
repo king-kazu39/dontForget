@@ -19,7 +19,13 @@ class ViewController: UIViewController {
 
     
     @IBAction func tapPrep(_ sender: Any) {
-        set = 0
+        print(set)
+        if set == nil{
+            set = 0
+        } else {
+            set = 1
+        }
+
     }
     
 

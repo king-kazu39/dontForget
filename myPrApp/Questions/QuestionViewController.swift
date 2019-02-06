@@ -18,6 +18,10 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
     var selectedImg: String?
     
     @IBOutlet weak var questTable: UITableView!
+    @IBOutlet weak var sentenceLabel: UITextView!
+    
+    let jpnSentence = "出発前の確認項目です。"
+    let engSentence = "These are confirmation items before departure."
     
     
     override func viewDidLoad() {
@@ -26,6 +30,14 @@ class QuestionViewController: UIViewController,UITableViewDataSource,UITableView
         // Do any additional setup after loading the view.
         
         print("選択されたUserTypeは\(selectedImg)です")
+        
+        //Japaneseに設定していたら日本文にする
+        if settingLang == "Japanese" {
+            sentenceLabel.text = jpnSentence
+        //Englishに設定していたら英文にする
+        } else if settingLang == "English" {
+            sentenceLabel.text = engSentence
+        }
 
     }
     
