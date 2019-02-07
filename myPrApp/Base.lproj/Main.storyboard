@@ -586,7 +586,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.93212782270000005" green="1" blue="0.18939065869999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.96769615050000002" green="1" blue="0.98192443569999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="5cJ-sR-aPT" firstAttribute="leading" secondItem="ns3-Vb-3NB" secondAttribute="leading" constant="18" id="LGJ-Md-EsB"/>
                             <constraint firstItem="5cJ-sR-aPT" firstAttribute="top" secondItem="ns3-Vb-3NB" secondAttribute="top" constant="60" id="PIV-Yx-Fja"/>
@@ -906,6 +906,7 @@
         <image name="usertype" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="zeG-KJ-DhZ"/>
         <segue reference="r2v-Up-gte"/>
     </inferredMetricsTieBreakers>
 </document>
