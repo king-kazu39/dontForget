@@ -58,7 +58,7 @@ class DepDateTimeViewController: UIViewController {
     @IBAction func tapDtm(_ sender: Any) {
     
         //アラートオブジェクトを作る
-        let alert = UIAlertController(title: "出発時間を設定します", message: "よろしいですか？", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Set the departure time.", message: "Is it Okay?", preferredStyle: .alert)
         
         //キャンセルが押されたときにCancelを出力して現画面に留まるように設定している
         alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: {(action: UIAlertAction!) -> Void in print("Cancel")}))
@@ -78,7 +78,7 @@ class DepDateTimeViewController: UIViewController {
         print("OK押されました")
         
         //アラート画面を表示
-        let alert = UIAlertController(title: "設定が完了しました", message: "TOPに戻ります。よろしいですか？", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Setting is completed.", message: "", preferredStyle: .alert)
         
         //OKが押されたときにmyMessageの中に書いた処理を実行するように設定している
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in self.myMoveTop()}))

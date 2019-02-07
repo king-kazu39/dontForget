@@ -33,7 +33,7 @@ class GroomingCameraViewController: UIViewController {
     //アラートを呼び出す関数
     func alertPicture() {
         //アラートオブジェクトを作る
-        let alert = UIAlertController(title: "身だしなみは大丈夫ですね。", message: "寝癖はありませんか", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Your grooming is okay", message: "isn't it?", preferredStyle: .alert)
         
         //OKが押されたときにmyMessageの中に書いた処理を実行するように設定している
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in self.Go()}))

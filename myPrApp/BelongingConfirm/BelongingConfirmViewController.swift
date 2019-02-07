@@ -206,7 +206,7 @@ class BelongingConfirmViewController: UIViewController,UIImagePickerControllerDe
     //アラートを呼び出す関数
     func alert () {
         //アラートオブジェクトを作る
-        let alert = UIAlertController(title: "身だしなみを整えたら", message: "撮影してください", preferredStyle: .alert)
+        let alert = UIAlertController(title: "When you are well-grooming,take a picture.", message: "to fix bed hair", preferredStyle: .alert)
         
         //OKが押されたときにmyMessageの中に書いた処理を実行するように設定している
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in self.moveCamera()}))
